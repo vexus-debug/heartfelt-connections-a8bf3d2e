@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.png";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -11,6 +10,17 @@ const navLinks = [
   { name: "Contact Us", path: "/contact" },
   { name: "Book Now", path: "/booking" },
 ];
+
+const Logo = () => (
+  <div className="flex flex-col items-start leading-none">
+    <span className="font-playfair text-2xl md:text-3xl font-bold tracking-wide pink-gold-text-gradient">
+      POSHBODY
+    </span>
+    <span className="text-[10px] md:text-xs text-muted-foreground tracking-[0.2em] uppercase">
+      Aesthetic & Med Spa
+    </span>
+  </div>
+);
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,11 +34,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img 
-              src={logo} 
-              alt="POSHBODY Aesthetic and Med Spa" 
-              className="h-16 md:h-20 w-auto"
-            />
+            <Logo />
           </Link>
 
           {/* Desktop Navigation */}
@@ -57,7 +63,7 @@ const Navbar = () => {
               <Phone className="w-4 h-4" />
               +234 704 024 1630
             </a>
-            <Button asChild className="gold-gradient text-charcoal hover:opacity-90 font-semibold">
+            <Button asChild className="gold-gradient text-white hover:opacity-90 font-semibold">
               <a
                 href="https://wa.me/2347040241630?text=Hello%20POSHBODY%20Aesthetic%20and%20Med%20Spa%2C%20I%20would%20like%20to%20book%20an%20appointment."
                 target="_blank"
@@ -104,7 +110,7 @@ const Navbar = () => {
                   <Phone className="w-4 h-4" />
                   +234 704 024 1630
                 </a>
-                <Button asChild className="w-full gold-gradient text-charcoal font-semibold">
+                <Button asChild className="w-full gold-gradient text-white font-semibold">
                   <a
                     href="https://wa.me/2347040241630?text=Hello%20POSHBODY%20Aesthetic%20and%20Med%20Spa%2C%20I%20would%20like%20to%20book%20an%20appointment."
                     target="_blank"
