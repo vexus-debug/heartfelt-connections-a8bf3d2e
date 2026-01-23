@@ -179,7 +179,7 @@ const About = () => {
                 <div className="relative z-10 p-8 md:p-10 min-h-[400px] flex flex-col justify-end">
                   <h3 className="font-serif text-2xl md:text-3xl font-bold mb-6 text-cream"><span className="text-accent">Non-Invasive</span> Treatments</h3>
                   <ul className="space-y-3 text-cream/90">
-                    {["Classic and specialty facials", "Therapeutic massage treatments", "LED light therapy", "Body sculpting and cavitation", "Lymphatic drainage massage"].map((item, i) => (
+                    {["Cavitation and vacuum therapies", "Hydra facials and chemical peels", "IV vitamin drips", "Spa therapies and body polishing", "Fat dissolving injections"].map((item, i) => (
                       <li key={i} className="flex items-center gap-3"><span className="w-2 h-2 bg-accent rounded-full flex-shrink-0" /><span>{item}</span></li>
                     ))}
                   </ul>
@@ -193,7 +193,7 @@ const About = () => {
                 <div className="relative z-10 p-8 md:p-10 min-h-[400px] flex flex-col justify-end">
                   <h3 className="font-serif text-2xl md:text-3xl font-bold mb-6 text-cream"><span className="text-accent">Invasive & Advanced</span> Treatments</h3>
                   <ul className="space-y-3 text-cream/90">
-                    {["Vampire facials", "Fat dissolving injections", "Tattoo and stretch mark removal", "Skin tag and mole removal", "Microdermabrasion"].map((item, i) => (
+                    {["PDO thread face and body lifts", "Dermal fillers and Botox", "PRP hair and body treatments", "Vampire MicroNeedling", "Laser tattoo and scar removal"].map((item, i) => (
                       <li key={i} className="flex items-center gap-3"><span className="w-2 h-2 bg-accent rounded-full flex-shrink-0" /><span>{item}</span></li>
                     ))}
                   </ul>

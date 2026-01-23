@@ -6,25 +6,25 @@ const testimonials = [
     name: "Amara O.",
     text: "From the moment I walked in, I felt like royalty. The staff genuinely cares about your comfort. My skin has never looked better!",
     rating: 5,
-    service: "Glow Facial"
+    service: "Hydra Facial"
   },
   {
     name: "Chidinma E.",
     text: "I was skeptical about body sculpting, but the results speak for themselves. The team is professional and the ambiance is heavenly.",
     rating: 5,
-    service: "Body Sculpting"
+    service: "Lipocavitation"
   },
   {
     name: "Blessing N.",
-    text: "The hot stone massage was exactly what I needed. I left feeling like a completely new person. Thank you, POSHBODY!",
+    text: "The vacuum butt lift was exactly what I needed. I left feeling like a completely new person. Thank you, POSHBODY!",
     rating: 5,
-    service: "Hot Stone Massage"
+    service: "Vacuum Butt Lift"
   },
   {
     name: "Ada M.",
     text: "Finally found my go-to med spa! The attention to detail and personalized care is unmatched. Truly the best place to go!",
     rating: 5,
-    service: "Swedish Massage"
+    service: "Moroccan Hammam Bath"
   },
 ];
 

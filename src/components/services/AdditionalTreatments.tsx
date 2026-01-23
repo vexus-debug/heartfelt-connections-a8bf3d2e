@@ -12,6 +12,9 @@ interface AdditionalTreatmentsProps {
 }
 
 const AdditionalTreatments = ({ services }: AdditionalTreatmentsProps) => {
+  // Don't render if no services
+  if (services.length === 0) return null;
+  
   return (
     <section className="py-24 bg-card relative overflow-hidden">
       {/* Decorative elements */}

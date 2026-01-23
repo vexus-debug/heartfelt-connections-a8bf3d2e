@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import gallery15 from "@/assets/gallery/gallery-15.jpg";
 
-const massageHighlights = [
-  { name: "Swedish Massage", description: "Gentle strokes for deep relaxation" },
-  { name: "Deep Tissue Therapy", description: "Target those stubborn knots" },
-  { name: "Hot Stone Experience", description: "Warm stones melt tension away" },
+const treatmentHighlights = [
+  { name: "Lipocavitation/Tummy Blast", description: "Ultrasonic fat destruction for a flatter tummy" },
+  { name: "Vacuum Butt Lift", description: "Non-surgical enhancement for lifted curves" },
+  { name: "Sculpting & Waist Trimming", description: "Define your ideal silhouette" },
 ];
 
 const MassageJourneySection = () => {
@@ -46,7 +46,7 @@ const MassageJourneySection = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                Your Journey Begins
+                Shape Your Dreams
               </motion.span>
               <motion.h2 
                 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mt-4"
@@ -55,7 +55,7 @@ const MassageJourneySection = () => {
                 transition={{ duration: 0.7, delay: 0.3 }}
                 viewport={{ once: true }}
               >
-                Let Skilled Hands Melt Away Your Tension
+                Sculpt Your Body, Boost Your Confidence
               </motion.h2>
             </div>
             
@@ -66,12 +66,12 @@ const MassageJourneySection = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              Close your eyes. Breathe deeply. Feel the weight of the world lift 
-              as our expert therapists work their magic on every tired muscle.
+              Transform your silhouette with our advanced cavitation and vacuum therapies. 
+              Non-invasive treatments that target stubborn fat and enhance your natural curves.
             </motion.p>
             
             <div className="space-y-4">
-              {massageHighlights.map((item, index) => (
+              {treatmentHighlights.map((item, index) => (
                 <motion.div 
                   key={index} 
                   className="flex items-start gap-5 p-5 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/15 hover:bg-white/15 transition-all duration-300"
@@ -102,7 +102,7 @@ const MassageJourneySection = () => {
                 className="gold-gradient text-charcoal hover:opacity-90 shadow-lg hover:shadow-xl transition-all duration-300 group gold-glow"
               >
                 <Link to="/services" className="flex items-center gap-3">
-                  Explore Massage & Spa
+                  Explore Cavitation Therapies
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
@@ -119,7 +119,7 @@ const MassageJourneySection = () => {
             <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
               <motion.img 
                 src={gallery15} 
-                alt="Relaxing massage treatment" 
+                alt="Body sculpting treatment" 
                 className="w-full h-full object-cover"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.6 }}

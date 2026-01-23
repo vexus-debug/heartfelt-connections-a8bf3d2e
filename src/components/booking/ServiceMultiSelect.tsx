@@ -118,46 +118,48 @@ const ServiceMultiSelect = ({ selectedServices, onSelectionChange }: ServiceMult
         );
       })}
 
-      {/* Additional Treatments */}
-      <Collapsible
-        open={openCategories.includes("additional")}
-        onOpenChange={() => toggleCategory("additional")}
-      >
-        <CollapsibleTrigger className="w-full px-4 py-3 flex items-center justify-between hover:bg-muted/50 transition-colors border-t border-primary/10">
-          <div className="flex items-center gap-3">
-            <Check className="w-5 h-5 text-primary" />
-            <span className="font-medium">Additional Treatments</span>
-            {getAdditionalSelectedCount() > 0 && (
-              <span className="px-2 py-0.5 text-xs rounded-full bg-primary text-primary-foreground">
-                {getAdditionalSelectedCount()}
-              </span>
-            )}
-          </div>
-          <ChevronDown
-            className={cn(
-              "w-4 h-4 text-muted-foreground transition-transform duration-200",
-              openCategories.includes("additional") && "rotate-180"
-            )}
-          />
-        </CollapsibleTrigger>
-        <CollapsibleContent>
-          <div className="px-4 pb-3 space-y-1">
-            {additionalServices.map((service) => (
-              <label
-                key={service.name}
-                className="flex items-center gap-3 py-2 px-3 rounded-lg hover:bg-muted/50 cursor-pointer transition-colors"
-              >
-                <Checkbox
-                  checked={isServiceSelected(service.name)}
-                  onCheckedChange={() => toggleService(service, "Additional Treatments")}
-                />
-                <span className="flex-1">{service.name}</span>
-                <span className="text-sm text-muted-foreground italic">{service.price}</span>
-              </label>
-            ))}
-          </div>
-        </CollapsibleContent>
-      </Collapsible>
+      {/* Additional Treatments - only show if there are any */}
+      {additionalServices.length > 0 && (
+        <Collapsible
+          open={openCategories.includes("additional")}
+          onOpenChange={() => toggleCategory("additional")}
+        >
+          <CollapsibleTrigger className="w-full px-4 py-3 flex items-center justify-between hover:bg-muted/50 transition-colors border-t border-primary/10">
+            <div className="flex items-center gap-3">
+              <Check className="w-5 h-5 text-primary" />
+              <span className="font-medium">Additional Treatments</span>
+              {getAdditionalSelectedCount() > 0 && (
+                <span className="px-2 py-0.5 text-xs rounded-full bg-primary text-primary-foreground">
+                  {getAdditionalSelectedCount()}
+                </span>
+              )}
+            </div>
+            <ChevronDown
+              className={cn(
+                "w-4 h-4 text-muted-foreground transition-transform duration-200",
+                openCategories.includes("additional") && "rotate-180"
+              )}
+            />
+          </CollapsibleTrigger>
+          <CollapsibleContent>
+            <div className="px-4 pb-3 space-y-1">
+              {additionalServices.map((service) => (
+                <label
+                  key={service.name}
+                  className="flex items-center gap-3 py-2 px-3 rounded-lg hover:bg-muted/50 cursor-pointer transition-colors"
+                >
+                  <Checkbox
+                    checked={isServiceSelected(service.name)}
+                    onCheckedChange={() => toggleService(service, "Additional Treatments")}
+                  />
+                  <span className="flex-1">{service.name}</span>
+                  <span className="text-sm text-muted-foreground italic">{service.price}</span>
+                </label>
+              ))}
+            </div>
+          </CollapsibleContent>
+        </Collapsible>
+      )}
     </div>
   );
 };

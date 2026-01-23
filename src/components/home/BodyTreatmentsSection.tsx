@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import gallery5 from "@/assets/gallery/gallery-5.jpg";
 
 const treatments = [
-  { name: "Body Sculpting", icon: "✨" },
-  { name: "Cavitation", icon: "🎯" },
-  { name: "Lymphatic Drainage", icon: "💫" },
-  { name: "Fat Dissolving", icon: "⚡" },
+  { name: "PDO Thread Lift", icon: "✨" },
+  { name: "Dermal Fillers", icon: "🎯" },
+  { name: "Botox", icon: "💫" },
+  { name: "PRP Therapy", icon: "⚡" },
 ];
 
 const BodyTreatmentsSection = () => {
@@ -44,7 +44,7 @@ const BodyTreatmentsSection = () => {
               <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
                 <motion.img 
                   src={gallery5} 
-                  alt="Body treatment session" 
+                  alt="Body enhancement treatment" 
                   className="w-full h-full object-cover"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.6 }}
@@ -79,7 +79,7 @@ const BodyTreatmentsSection = () => {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   viewport={{ once: true }}
                 >
-                  Shape Your Confidence
+                  Advanced Aesthetics
                 </motion.span>
                 <motion.h2 
                   className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mt-4"
@@ -88,7 +88,7 @@ const BodyTreatmentsSection = () => {
                   transition={{ duration: 0.7, delay: 0.3 }}
                   viewport={{ once: true }}
                 >
-                  Your Body, <br />Your Temple
+                  Enhance Your <br />Natural Beauty
                 </motion.h2>
               </div>
               
@@ -99,8 +99,8 @@ const BodyTreatmentsSection = () => {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 viewport={{ once: true }}
               >
-                Let us help you sculpt it. Our advanced body treatments combine cutting-edge 
-                technology with expert care to help you achieve the silhouette you've always dreamed of.
+                Achieve your aesthetic goals with our surgical and non-surgical enhancement 
+                procedures. Expert care using the latest techniques for safe, stunning results.
               </motion.p>
               
               <motion.div 
@@ -146,7 +146,7 @@ const BodyTreatmentsSection = () => {
                   className="gold-gradient text-charcoal hover:opacity-90 shadow-lg hover:shadow-xl transition-all duration-300 group gold-glow"
                 >
                   <Link to="/services" className="flex items-center gap-3">
-                    Explore Body Treatments
+                    Explore Body Enhancement
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </Button>
