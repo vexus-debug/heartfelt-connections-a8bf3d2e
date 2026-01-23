@@ -48,7 +48,7 @@ const ServiceCategory = ({
             <div className="flex items-center justify-center gap-4">
               <div className="w-16 h-px bg-gradient-to-r from-transparent via-primary to-transparent" />
               <div className="w-16 h-16 rounded-full gold-gradient flex items-center justify-center gold-glow">
-                <Icon className="w-8 h-8 text-charcoal" />
+                <Icon className="w-8 h-8 text-white" />
               </div>
               <div className="w-16 h-px bg-gradient-to-r from-transparent via-primary to-transparent" />
             </div>

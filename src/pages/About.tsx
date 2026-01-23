@@ -3,14 +3,14 @@ import { Heart, Award, Users, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
-// Import gallery assets
+// Import hero and gallery assets
 import video1 from "@/assets/gallery/video-1.mp4";
-import gallery1 from "@/assets/gallery/gallery-1.jpg";
-import gallery2 from "@/assets/gallery/gallery-2.jpg";
-import gallery3 from "@/assets/gallery/gallery-3.jpg";
-import gallery4 from "@/assets/gallery/gallery-4.jpg";
-import gallery5 from "@/assets/gallery/gallery-5.jpg";
-import gallery6 from "@/assets/gallery/gallery-6.jpg";
+import hero1 from "@/assets/hero/hero-1.jpg";
+import hero2 from "@/assets/hero/hero-2.jpg";
+import hero3 from "@/assets/hero/hero-3.jpg";
+import hero4 from "@/assets/hero/hero-4.jpg";
+import hero5 from "@/assets/hero/hero-5.jpg";
+import hero6 from "@/assets/hero/hero-6.jpg";
 
 const values = [
   {
@@ -88,18 +88,18 @@ const About = () => {
               <div className="grid grid-cols-12 gap-4">
                 <div className="col-span-7 row-span-2">
                   <div className="relative group overflow-hidden rounded-3xl aspect-[3/4]">
-                    <img src={gallery1} alt="POSHBODY Spa Treatment" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+                    <img src={hero1} alt="POSHBODY Spa Treatment" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
                   </div>
                 </div>
                 <div className="col-span-5">
                   <div className="relative group overflow-hidden rounded-3xl aspect-square">
-                    <img src={gallery2} alt="Spa Interior" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+                    <img src={hero2} alt="Spa Interior" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
                   </div>
                 </div>
                 <div className="col-span-5">
                   <div className="relative group overflow-hidden rounded-3xl aspect-square">
-                    <img src={gallery3} alt="Luxury Treatment" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+                    <img src={hero3} alt="Luxury Treatment" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
                   </div>
                 </div>
               </div>
@@ -152,7 +152,7 @@ const About = () => {
             {values.map((value, index) => (
               <div key={index} className="group relative p-8 rounded-3xl bg-card border border-primary/10 hover:border-primary/25 transition-all duration-500 hover:-translate-y-2">
                 <div className="w-16 h-16 rounded-2xl gold-gradient flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
-                  <value.icon className="w-8 h-8 text-charcoal" />
+                  <value.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-serif text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">{value.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{value.description}</p>
@@ -173,7 +173,7 @@ const About = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="relative group overflow-hidden rounded-3xl">
                 <div className="absolute inset-0">
-                  <img src={gallery4} alt="Non-invasive treatments" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+                  <img src={hero4} alt="Non-invasive treatments" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/80 to-charcoal/40" />
                 </div>
                 <div className="relative z-10 p-8 md:p-10 min-h-[400px] flex flex-col justify-end">
@@ -187,7 +187,7 @@ const About = () => {
               </div>
               <div className="relative group overflow-hidden rounded-3xl">
                 <div className="absolute inset-0">
-                  <img src={gallery5} alt="Advanced treatments" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+                  <img src={hero5} alt="Advanced treatments" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/80 to-charcoal/40" />
                 </div>
                 <div className="relative z-10 p-8 md:p-10 min-h-[400px] flex flex-col justify-end">
@@ -207,7 +207,7 @@ const About = () => {
       {/* CTA Section */}
       <section className="relative py-24 md:py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={gallery6} alt="Spa ambiance" className="w-full h-full object-cover"/>
+          <img src={hero6} alt="Spa ambiance" className="w-full h-full object-cover"/>
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/90 to-charcoal/70" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
@@ -220,7 +220,7 @@ const About = () => {
             </div>
             <p className="text-cream/80 text-lg md:text-xl leading-relaxed">Join our family and discover why POSHBODY Aesthetic and Med Spa is THE BEST PLACE TO GO across Lagos, Abuja, and Port Harcourt.</p>
             <div className="flex flex-col sm:flex-row items-start gap-4 pt-4">
-              <Button asChild size="lg" className="gold-gradient text-charcoal hover:opacity-90 rounded-full px-8 text-base font-semibold">
+              <Button asChild size="lg" className="gold-gradient text-white hover:opacity-90 rounded-full px-8 text-base font-semibold">
                 <Link to="/booking">Book Your Appointment</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="border-cream/40 text-cream hover:bg-cream/10 rounded-full px-8 text-base">

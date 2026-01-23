@@ -119,7 +119,7 @@ const LocationsSection = () => {
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <MapPin className="w-6 h-6 text-charcoal" />
+                  <MapPin className="w-6 h-6 text-white" />
                 </motion.div>
                 <div>
                   <h3 className="font-serif text-xl font-bold text-white">
@@ -173,7 +173,7 @@ const LocationsSection = () => {
           <Button 
             asChild 
             size="lg"
-            className="gold-gradient text-charcoal hover:opacity-90 shadow-lg hover:shadow-xl transition-all duration-300 group gold-glow"
+            className="gold-gradient text-white hover:opacity-90 shadow-lg hover:shadow-xl transition-all duration-300 group gold-glow"
           >
             <Link to="/contact" className="flex items-center gap-3">
               Get Directions & Contact

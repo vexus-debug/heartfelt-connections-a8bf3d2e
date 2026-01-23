@@ -1,6 +1,16 @@
 import { Link } from "react-router-dom";
 import { Phone, MapPin, Clock, Instagram } from "lucide-react";
-import logo from "@/assets/logo.png";
+
+const Logo = () => (
+  <div className="flex flex-col items-start leading-none">
+    <span className="font-playfair text-2xl font-bold tracking-wide pink-gold-text-gradient">
+      POSHBODY
+    </span>
+    <span className="text-[10px] text-muted-foreground tracking-[0.2em] uppercase">
+      Aesthetic & Med Spa
+    </span>
+  </div>
+);
 
 const Footer = () => {
   return (
@@ -10,11 +20,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/">
-              <img 
-                src={logo} 
-                alt="POSHBODY Aesthetic and Med Spa" 
-                className="h-16 w-auto"
-              />
+              <Logo />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
               THE BEST PLACE TO GO for luxury medical spa services. Get your body snatched, 
