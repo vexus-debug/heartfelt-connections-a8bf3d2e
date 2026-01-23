@@ -98,7 +98,7 @@ const SanctuarySection = () => {
                 Here, you are the priority.
               </p>
               <p className="text-foreground/80 text-lg leading-relaxed">
-                La Belle Lounge & Spa isn't just a place — it's an escape. A retreat designed 
+                Poshbody Spa isn't just a place — it's an escape. A retreat designed 
                 to wrap you in warmth, comfort, and care from the moment you arrive.
               </p>
               <p className="text-primary/80 text-xl leading-relaxed font-serif italic border-l-4 border-primary/30 pl-6">

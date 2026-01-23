@@ -81,10 +81,10 @@ const HeroSection = () => {
 
       {/* Main content container */}
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[90vh]">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-16 items-center min-h-[85vh] lg:min-h-[90vh] py-8 lg:py-0">
           
           {/* Left side - Content */}
-          <div className="order-2 lg:order-1 space-y-8 z-10">
+          <div className="order-2 lg:order-1 space-y-5 lg:space-y-8 z-10">
             <motion.div 
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/5 backdrop-blur-sm"
               initial={{ opacity: 0, y: 30 }}
@@ -96,18 +96,18 @@ const HeroSection = () => {
             </motion.div>
             
             <motion.h1 
-              className="font-serif text-5xl md:text-6xl xl:text-7xl font-bold leading-[1.1]"
+              className="font-serif text-4xl md:text-6xl xl:text-7xl font-bold leading-[1.1]"
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.4 }}
             >
               <span className="pink-gold-text-gradient">POSHBODY</span>
               <br />
-              <span className="text-foreground text-3xl md:text-4xl xl:text-5xl">Aesthetic & Med Spa</span>
+              <span className="text-foreground text-2xl md:text-4xl xl:text-5xl">Aesthetic & Med Spa</span>
             </motion.h1>
             
             <motion.p 
-              className="text-lg md:text-xl text-muted-foreground max-w-md leading-relaxed"
+              className="text-base md:text-xl text-muted-foreground max-w-md leading-relaxed"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.7 }}
@@ -117,21 +117,21 @@ const HeroSection = () => {
             </motion.p>
 
             <motion.div 
-              className="flex flex-col sm:flex-row items-start gap-4 pt-2"
+              className="flex flex-col sm:flex-row items-start gap-3 lg:gap-4 pt-1 lg:pt-2"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.9 }}
             >
               <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
-                <Button asChild size="lg" className="gold-gradient text-charcoal hover:opacity-90 text-base px-8 py-6 shadow-lg gold-glow font-semibold">
+                <Button asChild size="lg" className="pink-gradient text-primary-foreground hover:opacity-90 text-sm md:text-base px-6 md:px-8 py-5 md:py-6 shadow-lg pink-glow font-semibold">
                   <Link to="/booking">
                     Book Your Experience
-                    <ArrowRight className="ml-2 w-5 h-5" />
+                    <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5" />
                   </Link>
                 </Button>
               </motion.div>
               <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
-                <Button asChild variant="outline" size="lg" className="border-primary/40 text-primary hover:bg-primary hover:text-primary-foreground text-base px-8 py-6">
+                <Button asChild variant="outline" size="lg" className="border-primary/40 text-primary hover:bg-primary hover:text-primary-foreground text-sm md:text-base px-6 md:px-8 py-5 md:py-6">
                   <Link to="/services">
                     Explore Services
                   </Link>
@@ -152,7 +152,7 @@ const HeroSection = () => {
           </div>
 
           {/* Right side - Image showcase */}
-          <div className="order-1 lg:order-2 relative flex items-center justify-center py-8 lg:py-0">
+          <div className="order-1 lg:order-2 relative flex items-center justify-center py-4 lg:py-0">
             {/* Decorative frame behind image */}
             <motion.div 
               className="absolute inset-4 lg:inset-0 border border-primary/20 rounded-2xl"

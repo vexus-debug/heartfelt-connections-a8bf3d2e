@@ -17,10 +17,10 @@ const FloatingButtons = () => {
         </a>
       </div>
 
-      {/* Book Now Button - Bottom Right - Gold accent */}
+      {/* Book Now Button - Bottom Right */}
       <Link
         to="/booking"
-        className="fixed bottom-6 right-6 z-40 flex items-center gap-2 px-5 py-3 rounded-full gold-gradient text-charcoal font-semibold shadow-lg hover:scale-105 transition-transform duration-300"
+        className="fixed bottom-6 right-6 z-40 flex items-center gap-2 px-5 py-3 rounded-full pink-gradient text-primary-foreground font-semibold shadow-lg hover:scale-105 transition-transform duration-300"
       >
         <CalendarCheck className="w-5 h-5" />
         <span className="hidden sm:inline">Book Now</span>

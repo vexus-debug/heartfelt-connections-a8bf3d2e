@@ -143,7 +143,7 @@ const BodyTreatmentsSection = () => {
                 <Button 
                   asChild 
                   size="lg"
-                  className="gold-gradient text-charcoal hover:opacity-90 shadow-lg hover:shadow-xl transition-all duration-300 group gold-glow"
+                  className="bg-white text-primary hover:bg-white/90 shadow-lg hover:shadow-xl transition-all duration-300 group"
                 >
                   <Link to="/services" className="flex items-center gap-3">
                     Explore Body Enhancement
