@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import manicureImg from "@/assets/services/manicure.jpg";
-import pedicureImg from "@/assets/services/pedicure.jpg";
-import waxingImg from "@/assets/services/waxing.jpg";
+import gallery2 from "@/assets/gallery/gallery-2.jpg";
+import gallery6 from "@/assets/gallery/gallery-6.jpg";
+import gallery8 from "@/assets/gallery/gallery-8.jpg";
 
 const services = [
-  { image: manicureImg, title: "Manicure", description: "Express yourself through beautiful nails" },
-  { image: pedicureImg, title: "Pedicure", description: "Pamper your feet to perfection" },
-  { image: waxingImg, title: "Waxing", description: "Smooth, silky skin awaits" },
+  { image: gallery2, title: "IV Vitamin Drips", description: "Boost your wellness from within" },
+  { image: gallery6, title: "Spa Therapies", description: "Luxurious pampering treatments" },
+  { image: gallery8, title: "Fat Dissolving", description: "Target stubborn fat deposits" },
 ];
 
 const FinishingTouchSection = () => {
@@ -38,7 +38,7 @@ const FinishingTouchSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            The Details Matter
+            Complete Your Transformation
           </motion.span>
           <motion.h2 
             className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-6"
@@ -56,8 +56,8 @@ const FinishingTouchSection = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            Because even the smallest details deserve attention. From perfectly polished 
-            nails to silky smooth skin, we've got you covered.
+            Enhance your results with our complementary treatments. From vitamin drips 
+            to luxurious spa therapies, we have everything you need.
           </motion.p>
         </motion.div>
         

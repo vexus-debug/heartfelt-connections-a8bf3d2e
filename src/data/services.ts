@@ -1,4 +1,4 @@
-import { Heart, Sparkles, Zap, Droplets, Hand, Scissors, LucideIcon } from "lucide-react";
+import { Zap, Sparkles, Syringe, Heart, Droplets, Activity, ShoppingBag, LucideIcon } from "lucide-react";
 
 export interface Service {
   name: string;
@@ -17,100 +17,136 @@ export interface ServiceCategory {
 
 export const serviceCategories: ServiceCategory[] = [
   {
-    id: "massage-spa",
-    icon: Heart,
-    title: "Massage & Spa",
-    description: "Surrender to the healing power of touch. Our expert therapists blend ancient techniques with modern luxury to melt away stress and restore your inner balance.",
-    services: [
-      { name: "Deep Tissue Massage", price: "₦28,000", description: "Intensive pressure targeting deep muscle layers to release chronic tension and knots.", duration: "60 minutes" },
-      { name: "Swedish Massage", price: "₦25,000", description: "Classic relaxation massage using long, flowing strokes to ease muscle tension and improve circulation.", duration: "60 minutes" },
-      { name: "Aromatherapy Massage", price: "₦30,000", description: "Therapeutic massage enhanced with essential oils selected for your specific needs.", duration: "75 minutes" },
-      { name: "Thai/Spot Massage", price: "₦32,000", description: "Traditional Thai techniques combined with targeted pressure point therapy.", duration: "60 minutes" },
-      { name: "Hot-Stone Massage", price: "₦35,000", description: "Heated basalt stones placed on key points to deeply relax muscles and calm the mind.", duration: "90 minutes" },
-      { name: "Reflexology", price: "₦30,000", description: "Precise pressure applied to reflex points on the feet to promote whole-body wellness.", duration: "45 minutes" },
-      { name: "Sensual Erotic Massage", price: "₦50,000", description: "An intimate, premium experience designed for deep relaxation and connection.", duration: "90 minutes" },
-      { name: "Combined Deep/Swedish", price: "₦40,000", description: "The best of both worlds—relaxation meets therapeutic deep tissue work.", duration: "90 minutes" },
-    ],
-  },
-  {
-    id: "classic-facials",
-    icon: Sparkles,
-    title: "Classic Facials",
-    description: "Unveil your natural radiance with our signature facial treatments. Each session is a personalized journey to clearer, more luminous skin.",
-    services: [
-      { name: "Classic Facial", price: "₦20,000", description: "A comprehensive treatment including cleansing, exfoliation, extraction, mask, and hydration.", duration: "60 minutes" },
-      { name: "Glow Facial", price: "₦25,000", description: "Brightening treatment designed to restore luminosity and even skin tone.", duration: "75 minutes" },
-    ],
-  },
-  {
-    id: "anti-aging-facials",
+    id: "cavitation-vacuum",
     icon: Zap,
-    title: "Anti-Aging Facials",
-    description: "Turn back time with our advanced anti-aging protocols. Cutting-edge technology meets luxurious pampering for visibly younger-looking skin.",
+    title: "Cavitation/Vacuum Therapies",
+    description: "Transform your body with our advanced cavitation and vacuum technologies. These non-invasive treatments target stubborn fat, enhance curves, and sculpt your ideal silhouette.",
     services: [
-      { name: "Laser Facial", price: "₦35,000", description: "Advanced laser technology to stimulate collagen production and reduce fine lines.", duration: "45 minutes" },
-      { name: "Vampire Facial", price: "₦80,000", description: "PRP therapy using your own plasma to rejuvenate skin at the cellular level.", duration: "90 minutes" },
-      { name: "Wrinkle Collagen Facial", price: "₦65,000", description: "Intensive collagen-boosting treatment to plump and firm mature skin.", duration: "75 minutes" },
+      { name: "Vacuum Butt Lift/Enlargement", price: "₦30,000", description: "Non-surgical butt enhancement using vacuum therapy to lift and enlarge." },
+      { name: "Vacuum Hips Enlargement", price: "₦30,000", description: "Enhance hip curves naturally with vacuum suction technology." },
+      { name: "Lipocavitation/Tummy Blast", price: "₦40,000", description: "Ultrasonic fat destruction targeting abdominal fat deposits." },
+      { name: "Sculpting and Waist Trimming", price: "₦40,000", description: "Define your waistline with targeted body sculpting treatment." },
+      { name: "Arm Fat Cavitation", price: "₦40,000", description: "Eliminate stubborn arm fat with ultrasonic cavitation." },
+      { name: "Calf Reduction Cavitation", price: "₦40,000", description: "Slim and contour calves for a more proportioned look." },
+      { name: "Vacuum/Hip Dip Corrector", price: "₦30,000", description: "Fill in hip dips for smoother, curvier hips." },
+      { name: "Tummy Tightening", price: "₦40,000", description: "Firm and tighten loose abdominal skin." },
+      { name: "Cavitation for Cellulite Removal", price: "₦40,000", description: "Reduce the appearance of cellulite for smoother skin." },
     ],
   },
   {
-    id: "acne-facials",
+    id: "spa-therapies",
+    icon: Sparkles,
+    title: "Spa Therapies",
+    description: "Indulge in our comprehensive spa treatments designed to rejuvenate, cleanse, and pamper every inch of you. From luxurious baths to precise treatments.",
+    services: [
+      { name: "Skin Tag Removal", price: "₦60,000", description: "Safe and effective removal of skin tags. Send pics for consultation." },
+      { name: "Teeth Whitening", price: "₦60,000", description: "Professional teeth whitening for a brighter smile." },
+      { name: "Teeth Scaling, Polishing and Whitening", price: "₦80,000", description: "Complete dental spa treatment for optimal oral aesthetics." },
+      { name: "Tattoo Removal", price: "₦60,000", description: "Laser tattoo removal treatment. Send pics for consultation." },
+      { name: "Laser Hair Removal", price: "₦60,000", description: "Permanent hair reduction using laser technology. Send pics for consultation." },
+      { name: "Fibroblast Treatment", price: "₦60,000", description: "Skin tightening and lifting using fibroblast technology. Send pics for consultation." },
+      { name: "Laser Scar Removal", price: "₦60,000", description: "Reduce the appearance of scars with laser treatment. Send pics for consultation." },
+      { name: "Vijicilas", price: "₦60,000", description: "Premium intimate care treatment for women." },
+      { name: "Moroccan Hammam Bath", price: "₦70,000", description: "Traditional Moroccan bath ritual for deep cleansing and relaxation." },
+      { name: "Body Polishing", price: "₦60,000", description: "Full body exfoliation and polishing for silky smooth skin." },
+      { name: "Body Scrub", price: "₦60,000", description: "Deep exfoliating scrub to remove dead skin cells." },
+      { name: "Facial Waxing", price: "₦30,000", description: "Gentle facial hair removal for smooth skin." },
+      { name: "Under Arm Waxing", price: "₦30,000", description: "Clean, smooth underarms with long-lasting results." },
+      { name: "Full Body Waxing", price: "₦150,000", description: "Comprehensive waxing package for total smoothness." },
+      { name: "Hand Waxing", price: "₦70,000", description: "Full arm waxing for silky smooth arms." },
+      { name: "Leg Waxing", price: "₦60,000", description: "Complete leg waxing for smooth results." },
+    ],
+  },
+  {
+    id: "fat-dissolving",
+    icon: Syringe,
+    title: "Fat Dissolving Injections",
+    description: "Target stubborn fat deposits with our advanced injectable solutions. These treatments break down fat cells for a slimmer, more contoured appearance.",
+    services: [
+      { name: "Metabolism Booster Shot", price: "₦50,000", description: "Injectable treatment to boost metabolism and aid weight loss." },
+      { name: "LipoShot", price: "₦60,000", description: "Fat dissolving injection for targeted fat reduction." },
+      { name: "LipoShot Extra", price: "₦100,000", description: "Enhanced fat dissolving treatment for maximum results." },
+    ],
+  },
+  {
+    id: "facials",
+    icon: Heart,
+    title: "Facials",
+    description: "Reveal your most radiant skin with our comprehensive facial treatments. From deep cleansing to advanced anti-aging therapies, we have the perfect treatment for every skin concern.",
+    services: [
+      { name: "Derma Planning", price: "₦60,000", description: "Exfoliation treatment to remove dead skin and peach fuzz." },
+      { name: "Hydra Facials", price: "₦70,000", description: "Multi-step treatment to cleanse, extract, and hydrate skin." },
+      { name: "Mesotherapy", price: "₦70,000", description: "Micro-injections of vitamins and nutrients for skin rejuvenation." },
+      { name: "Facial MicroNeedling (with BB Glow)", price: "₦60,000", description: "Collagen-boosting treatment with semi-permanent coverage." },
+      { name: "Vampire MicroNeedling", price: "₦70,000", description: "PRP microneedling for enhanced skin regeneration." },
+      { name: "Brightening Facials", price: "₦50,000", description: "Illuminate your complexion with targeted brightening treatment." },
+      { name: "Chemical Peel", price: "₦80,000", description: "Professional-grade peel for deep skin renewal." },
+      { name: "RF Facials", price: "₦50,000", description: "Radio frequency treatment for skin tightening and lifting." },
+      { name: "Light Therapy Facials", price: "₦50,000", description: "LED light therapy to address various skin concerns." },
+      { name: "Acne Removal Facials", price: "₦60,000", description: "Targeted treatment for acne-prone skin." },
+    ],
+  },
+  {
+    id: "iv-drips",
     icon: Droplets,
-    title: "Acne Facials",
-    description: "Clear, heal, and transform troubled skin. Our specialized treatments target acne at its source while soothing inflammation and preventing scarring.",
+    title: "IV Vitamin Drips",
+    description: "Boost your wellness from within with our customized IV vitamin drips. Delivered directly into your bloodstream for maximum absorption and immediate results.",
     services: [
-      { name: "Microdermabrasion", price: "₦50,000", description: "Crystal exfoliation to remove dead skin cells and reveal fresh, clear skin beneath.", duration: "45 minutes" },
-      { name: "Dermaplaning", price: "₦25,000", description: "Gentle blade exfoliation to remove peach fuzz and dead skin for a smoother complexion.", duration: "30 minutes" },
-      { name: "High Frequency Treatment", price: "₦40,000", description: "Electrical current therapy to kill acne-causing bacteria and reduce inflammation.", duration: "30 minutes" },
-      { name: "LED Facial", price: "₦35,000", description: "Light therapy using specific wavelengths to calm inflammation and promote healing.", duration: "30 minutes" },
+      { name: "Glowing Cocktail Drip", price: "₦60,000", description: "Vitamin infusion for radiant, glowing skin." },
+      { name: "Detox Cocktail Drip", price: "₦50,000", description: "Cleansing drip to flush toxins and boost energy." },
+      { name: "Brightening Drip", price: "₦70,000", description: "Skin brightening and evening treatment." },
+      { name: "Snow White Shot", price: "₦120,000", description: "Premium skin lightening and brightening infusion." },
+      { name: "Immune Booster Cocktails", price: "₦40,000", description: "Vitamin boost to strengthen your immune system." },
+      { name: "Weight Gain Drip", price: "₦40,000", description: "Nutrient-rich drip to support healthy weight gain." },
     ],
   },
   {
-    id: "pedicure-manicure",
-    icon: Hand,
-    title: "Pedicure & Manicure",
-    description: "Indulge in meticulous nail care that goes beyond the basics. Every detail is perfected, from cuticles to polish, for hands and feet that make a statement.",
+    id: "body-enhancement",
+    icon: Activity,
+    title: "Body Enhancement Injections",
+    description: "Achieve your aesthetic goals with our surgical and non-surgical enhancement procedures. Expert care using the latest techniques for safe, stunning results.",
     services: [
-      { name: "Pedicure", price: "₦8,000", description: "Complete foot care including soak, scrub, nail shaping, and polish application.", duration: "45 minutes" },
-      { name: "Executive Pedicure", price: "₦10,000", description: "Premium pedicure with extended massage, paraffin treatment, and luxury products.", duration: "60 minutes" },
-      { name: "Pedicure & Manicure Combo", price: "₦15,000", description: "Full treatment for both hands and feet at a special combined rate.", duration: "90 minutes" },
-      { name: "Nail Cleaning & Trimming", price: "₦2,000", description: "Quick maintenance service for neat, clean nails.", duration: "15 minutes" },
+      { name: "PRP Hair Loss Treatment", price: "₦150,000", description: "Platelet-rich plasma therapy to stimulate hair growth." },
+      { name: "PRP Infusion Breast", price: "₦80,000", description: "Non-surgical breast enhancement using PRP." },
+      { name: "PRP Infusion Butts/Hips", price: "₦100,000", description: "Natural enhancement for buttocks and hips using PRP." },
+      { name: "Bio Filling (PRP Under Eye)", price: "₦100,000", description: "Under-eye rejuvenation with PRP bio-filling." },
+      { name: "O Shot", price: "₦70,000", description: "PRP treatment for feminine wellness and enhancement." },
+      { name: "Fillers For Face/Lips", price: "₦220,000", description: "Dermal fillers for facial contouring and lip enhancement." },
+      { name: "Butt/Hips/Boobs Derma Filler", price: "₦420,000", description: "Body contouring with premium dermal fillers." },
+      { name: "Botox", price: "₦220,000", description: "Anti-wrinkle treatment for a youthful appearance." },
+      { name: "PDO Thread Full Face Lift", price: "₦650,000", description: "Non-surgical face lift using dissolvable threads." },
+      { name: "PDO Thread Jawline", price: "₦400,000", description: "Jawline definition and lifting with PDO threads." },
+      { name: "PDO Boobs Lift", price: "₦500,000", description: "Non-surgical breast lift using PDO threads." },
+      { name: "PDO Thread Nose", price: "₦150,000", description: "Non-surgical nose reshaping with threads." },
+      { name: "Tummy MicroNeedling", price: "₦180,000", description: "Skin tightening and stretch mark reduction for the abdomen." },
+      { name: "Acne Removal Injection", price: "₦40,000", description: "Injectable treatment to clear stubborn acne." },
     ],
   },
   {
-    id: "waxing-services",
-    icon: Scissors,
-    title: "Waxing Services",
-    description: "Achieve silky-smooth skin with our professional waxing services. We use premium wax formulas for effective hair removal with minimal discomfort.",
+    id: "products",
+    icon: ShoppingBag,
+    title: "Products for Sale",
+    description: "Take the POSHBODY experience home with our curated selection of premium products. Enhance your results and maintain your glow between visits.",
     services: [
-      { name: "Chin Wax (Female)", price: "₦7,000", description: "Gentle removal of unwanted facial hair from the chin area.", duration: "15 minutes" },
-      { name: "Chin Wax (Male)", price: "₦15,000", description: "Professional chin and jawline waxing for men.", duration: "20 minutes" },
-      { name: "Face Wax", price: "₦12,000", description: "Complete facial waxing including upper lip, chin, and sideburns.", duration: "25 minutes" },
-      { name: "Under-arm Wax", price: "₦10,000", description: "Clean, smooth underarms with long-lasting results.", duration: "15 minutes" },
-      { name: "Bikini Wax", price: "₦23,000", description: "Professional bikini line waxing for a clean, confident look.", duration: "20 minutes" },
-      { name: "Hand Wax", price: "₦20,000", description: "Full arm waxing from wrist to shoulder.", duration: "30 minutes" },
-      { name: "Leg Wax", price: "₦25,000", description: "Complete leg waxing for silky smooth results.", duration: "45 minutes" },
-      { name: "Full Body Wax", price: "₦55,000", description: "Comprehensive waxing package for total smoothness.", duration: "120 minutes" },
+      { name: "Butt/Hips Enlargement Syrup", price: "₦15,000", description: "Natural enhancement supplement for curves." },
+      { name: "Butt/Hips Enlargement Oil", price: "₦12,000", description: "Topical oil for natural curve enhancement." },
+      { name: "Boobs Enlargement Powder", price: "₦12,000", description: "Natural supplement for breast enhancement." },
+      { name: "Boobs Enlargement Oil", price: "₦12,000", description: "Topical oil for natural breast enhancement." },
+      { name: "Sweet in the Middle Syrup", price: "₦18,000", description: "Premium feminine wellness supplement." },
+      { name: "Juicy in the Middle Gel", price: "₦10,000", description: "Intimate care gel for feminine wellness." },
+      { name: "Vijay Powder Sweetener", price: "₦15,000", description: "Natural intimate care powder." },
+      { name: "Curvy Plus", price: "₦20,000", description: "Complete curve enhancement supplement." },
+      { name: "Posh Cookie Secret", price: "₦12,000", description: "Feminine wellness secret formula." },
+      { name: "Miraculous Herbal Tea", price: "₦21,000", description: "Wellness tea for overall health and beauty." },
+      { name: "Posh Cookie Oil", price: "₦10,000", description: "Premium intimate care oil." },
+      { name: "Posh Cookie Scrub", price: "₦13,000", description: "Gentle exfoliating scrub for intimate care." },
+      { name: "Posh Cookie Wash", price: "₦13,000", description: "Gentle cleansing wash for intimate care." },
     ],
   },
 ];
 
-export const additionalServices: Service[] = [
-  { name: "Body Sculpting", price: "Consult for price" },
-  { name: "Cavitation Treatment", price: "Consult for price" },
-  { name: "Fat Dissolving Injections (Lipolysis)", price: "Consult for price" },
-  { name: "Lymphatic Drainage Massage", price: "Consult for price" },
-  { name: "Sauna Access", price: "Consult for price" },
-  { name: "Eyelash Extensions", price: "Consult for price" },
-  { name: "Semi-Permanent Lashes", price: "Consult for price" },
-  { name: "Hair Cutting & Styling", price: "Consult for price" },
-  { name: "Hair Coloring", price: "Consult for price" },
-  { name: "Tattoo Removal", price: "Consult for price" },
-  { name: "Stretch Mark Removal", price: "Consult for price" },
-  { name: "Skin Tag & Mole Removal", price: "Consult for price" },
-  { name: "Skin Analysis", price: "Consult for price" },
-  { name: "Carbon Facial", price: "Consult for price" },
-];
+// No additional services needed - all services are now categorized
+export const additionalServices: Service[] = [];
 
 // Helper to get all services as a flat list with category info
 export const getAllServices = () => {
@@ -123,14 +159,6 @@ export const getAllServices = () => {
         price: service.price,
         category: category.title,
       });
-    });
-  });
-  
-  additionalServices.forEach((service) => {
-    allServices.push({
-      name: service.name,
-      price: service.price,
-      category: "Additional Treatments",
     });
   });
   

@@ -1,4 +1,4 @@
-import { Heart, Sparkles, Zap, Droplets, Hand, Scissors, LucideIcon } from "lucide-react";
+import { Zap, Sparkles, Syringe, Heart, Droplets, Activity, ShoppingBag, LucideIcon } from "lucide-react";
 
 interface Category {
   icon: LucideIcon;
@@ -7,12 +7,13 @@ interface Category {
 }
 
 const categories: Category[] = [
-  { icon: Heart, title: "Massage & Spa", slug: "massage---spa" },
-  { icon: Sparkles, title: "Classic Facials", slug: "classic-facials" },
-  { icon: Zap, title: "Anti-Aging", slug: "anti-aging-facials" },
-  { icon: Droplets, title: "Acne Facials", slug: "acne-facials" },
-  { icon: Hand, title: "Pedi & Mani", slug: "pedicure---manicure" },
-  { icon: Scissors, title: "Waxing", slug: "waxing-services" },
+  { icon: Zap, title: "Cavitation/Vacuum", slug: "cavitation-vacuum" },
+  { icon: Sparkles, title: "Spa Therapies", slug: "spa-therapies" },
+  { icon: Syringe, title: "Fat Dissolving", slug: "fat-dissolving" },
+  { icon: Heart, title: "Facials", slug: "facials" },
+  { icon: Droplets, title: "IV Drips", slug: "iv-drips" },
+  { icon: Activity, title: "Body Enhancement", slug: "body-enhancement" },
+  { icon: ShoppingBag, title: "Products", slug: "products" },
 ];
 
 const CategoryNav = () => {

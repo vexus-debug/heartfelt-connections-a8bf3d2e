@@ -6,7 +6,7 @@ import gallery1 from "@/assets/gallery/gallery-1.jpg";
 import gallery12 from "@/assets/gallery/gallery-12.jpg";
 import gallery17 from "@/assets/gallery/gallery-17.jpg";
 
-const facialTags = ["Glow Facials", "LED Therapy", "Anti-Aging", "Acne Solutions"];
+const facialTags = ["Hydra Facials", "Chemical Peel", "Vampire MicroNeedling", "Brightening Facials"];
 
 const FacialJourneySection = () => {
   return (
