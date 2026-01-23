@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import gallery7 from "@/assets/gallery/gallery-7.jpg";
-import gallery14 from "@/assets/gallery/gallery-14.jpg";
+import backMassage from "@/assets/gallery/back-massage.jpg";
+import footMassage from "@/assets/gallery/foot-massage.jpg";
 
 const SanctuarySection = () => {
   return (
@@ -33,8 +33,8 @@ const SanctuarySection = () => {
               viewport={{ once: true }}
             >
               <motion.img 
-                src={gallery7} 
-                alt="Spa interior" 
+                src={backMassage} 
+                alt="Spa interior"
                 className="w-full h-full object-cover"
                 whileHover={{ scale: 1.08 }}
                 transition={{ duration: 0.5 }}
@@ -48,8 +48,8 @@ const SanctuarySection = () => {
               viewport={{ once: true }}
             >
               <motion.img 
-                src={gallery14} 
-                alt="Relaxation area" 
+                src={footMassage} 
+                alt="Relaxation area"
                 className="w-full h-full object-cover"
                 whileHover={{ scale: 1.08 }}
                 transition={{ duration: 0.5 }}
