@@ -12,20 +12,20 @@ const massageHighlights = [
 
 const MassageJourneySection = () => {
   return (
-    <section className="py-28 gold-gradient-streak gold-section-organic relative overflow-hidden">
+    <section className="py-28 pink-gradient-streak pink-section-organic relative overflow-hidden">
       {/* Decorative elements */}
-      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-primary-foreground/5 to-transparent" />
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-primary-foreground/5 to-transparent" />
+      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white/5 to-transparent" />
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white/5 to-transparent" />
       
-      {/* Floating orbs */}
+      {/* Gold accent orbs */}
       <motion.div 
-        className="absolute top-32 right-20 w-4 h-4 bg-primary-foreground/40 rounded-full"
-        animate={{ y: [0, -20, 0], opacity: [0.4, 0.8, 0.4] }}
+        className="absolute top-32 right-20 w-4 h-4 bg-accent/60 rounded-full"
+        animate={{ y: [0, -20, 0], opacity: [0.6, 1, 0.6] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
       />
       <motion.div 
-        className="absolute bottom-40 left-32 w-3 h-3 bg-primary-foreground/30 rounded-full"
-        animate={{ y: [0, -15, 0], opacity: [0.3, 0.6, 0.3] }}
+        className="absolute bottom-40 left-32 w-3 h-3 bg-accent/50 rounded-full"
+        animate={{ y: [0, -15, 0], opacity: [0.5, 0.8, 0.5] }}
         transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
       />
       
@@ -40,7 +40,7 @@ const MassageJourneySection = () => {
           >
             <div>
               <motion.span 
-                className="text-primary-foreground/70 uppercase tracking-[0.3em] text-sm font-medium"
+                className="text-white/80 uppercase tracking-[0.3em] text-sm font-medium"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
@@ -49,7 +49,7 @@ const MassageJourneySection = () => {
                 Your Journey Begins
               </motion.span>
               <motion.h2 
-                className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mt-4"
+                className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mt-4"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.3 }}
@@ -60,7 +60,7 @@ const MassageJourneySection = () => {
             </div>
             
             <motion.p 
-              className="text-primary-foreground/90 text-lg md:text-xl leading-relaxed"
+              className="text-white/90 text-lg md:text-xl leading-relaxed"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -74,17 +74,17 @@ const MassageJourneySection = () => {
               {massageHighlights.map((item, index) => (
                 <motion.div 
                   key={index} 
-                  className="flex items-start gap-5 p-5 rounded-2xl bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/10 hover:bg-primary-foreground/15 transition-all duration-300"
+                  className="flex items-start gap-5 p-5 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/15 hover:bg-white/15 transition-all duration-300"
                   initial={{ opacity: 0, x: -40 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: 0.5 + index * 0.15 }}
                   viewport={{ once: true }}
                   whileHover={{ x: 8 }}
                 >
-                  <div className="w-3 h-3 rounded-full bg-primary-foreground mt-2 flex-shrink-0" />
+                  <div className="w-3 h-3 rounded-full bg-accent mt-2 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-primary-foreground text-lg">{item.name}</h4>
-                    <p className="text-primary-foreground/70">{item.description}</p>
+                    <h4 className="font-semibold text-white text-lg">{item.name}</h4>
+                    <p className="text-white/70">{item.description}</p>
                   </div>
                 </motion.div>
               ))}
@@ -99,7 +99,7 @@ const MassageJourneySection = () => {
               <Button 
                 asChild 
                 size="lg"
-                className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 shadow-lg hover:shadow-xl transition-all duration-300 group"
+                className="gold-gradient text-charcoal hover:opacity-90 shadow-lg hover:shadow-xl transition-all duration-300 group gold-glow"
               >
                 <Link to="/services" className="flex items-center gap-3">
                   Explore Massage & Spa
@@ -126,14 +126,14 @@ const MassageJourneySection = () => {
               />
             </div>
             
-            {/* Decorative frame elements */}
+            {/* Decorative frame elements - gold accent */}
             <motion.div 
-              className="absolute -top-6 -right-6 w-40 h-40 border-2 border-primary-foreground/20 rounded-3xl"
+              className="absolute -top-6 -right-6 w-40 h-40 border-2 border-accent/40 rounded-3xl"
               animate={{ rotate: [0, 3, 0, -3, 0] }}
               transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
             />
             <motion.div 
-              className="absolute -bottom-4 -left-4 w-28 h-28 border border-primary-foreground/15 rounded-2xl"
+              className="absolute -bottom-4 -left-4 w-28 h-28 border border-white/25 rounded-2xl"
               animate={{ scale: [1, 1.05, 1] }}
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
             />

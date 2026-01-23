@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* La Belle Lounge & Spa - Deep Rose, Gold & Cream Theme
-   Primary: Deep Rose Pink (70%)
-   Secondary: Gold (30%)
+/* La Belle Lounge & Spa - Vibrant Hot Pink, Gold Accents & Cream Theme
+   Primary: Vibrant Hot Pink / Magenta (70%)
+   Secondary: Gold (accent only - 30%)
    Background: Light Cream
    All colors MUST be HSL.
 */
@@ -22,38 +22,39 @@
     --popover: 40 30% 98%;
     --popover-foreground: 25 30% 15%;
 
-    /* Deep Rose Pink primary - rich rose wine */
-    --primary: 345 70% 35%;
-    --primary-foreground: 40 35% 96%;
+    /* Vibrant Hot Pink / Magenta primary */
+    --primary: 330 85% 55%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Warm secondary - soft rose-tinted cream */
-    --secondary: 345 20% 92%;
-    --secondary-foreground: 345 70% 30%;
+    /* Warm secondary - soft pink-tinted cream */
+    --secondary: 330 30% 94%;
+    --secondary-foreground: 330 80% 45%;
 
-    /* Warm muted tones - dusty rose */
-    --muted: 345 15% 88%;
-    --muted-foreground: 345 20% 40%;
+    /* Warm muted tones - soft pink */
+    --muted: 330 20% 90%;
+    --muted-foreground: 330 25% 45%;
 
-    /* Gold accent - warm amber gold (30% usage) */
+    /* Gold accent - warm amber gold (accent only) */
     --accent: 42 90% 50%;
     --accent-foreground: 25 30% 12%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 345 25% 85%;
+    --border: 330 30% 85%;
     --input: 40 30% 94%;
-    --ring: 345 70% 35%;
+    --ring: 330 85% 55%;
 
     --radius: 0.5rem;
 
-    /* Deep Rose theme colors */
-    --rose: 345 70% 35%;
-    --rose-light: 345 60% 50%;
-    --rose-dark: 345 75% 25%;
-    --rose-muted: 345 30% 70%;
+    /* Hot Pink theme colors */
+    --pink: 330 85% 55%;
+    --pink-light: 330 80% 65%;
+    --pink-dark: 330 85% 45%;
+    --pink-muted: 330 40% 75%;
+    --pink-vibrant: 330 90% 58%;
     
-    /* Gold accent colors (30% of theme) */
+    /* Gold accent colors (accent only) */
     --gold: 42 90% 50%;
     --gold-light: 45 85% 62%;
     --gold-dark: 38 95% 38%;
@@ -68,33 +69,33 @@
 
     --sidebar-background: 40 30% 98%;
     --sidebar-foreground: 25 30% 15%;
-    --sidebar-primary: 345 70% 35%;
-    --sidebar-primary-foreground: 40 35% 96%;
-    --sidebar-accent: 345 20% 92%;
-    --sidebar-accent-foreground: 345 70% 30%;
-    --sidebar-border: 345 25% 85%;
-    --sidebar-ring: 345 70% 35%;
+    --sidebar-primary: 330 85% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 330 30% 94%;
+    --sidebar-accent-foreground: 330 80% 45%;
+    --sidebar-border: 330 30% 85%;
+    --sidebar-ring: 330 85% 55%;
   }
 
   .dark {
-    /* Dark mode - inverted theme with rose accents */
-    --background: 345 30% 8%;
+    /* Dark mode - inverted theme with pink accents */
+    --background: 330 30% 8%;
     --foreground: 40 35% 92%;
 
-    --card: 345 25% 12%;
+    --card: 330 25% 12%;
     --card-foreground: 40 35% 92%;
 
-    --popover: 345 25% 12%;
+    --popover: 330 25% 12%;
     --popover-foreground: 40 35% 92%;
 
-    --primary: 345 65% 55%;
-    --primary-foreground: 345 30% 8%;
+    --primary: 330 80% 60%;
+    --primary-foreground: 330 30% 8%;
 
-    --secondary: 345 20% 18%;
+    --secondary: 330 20% 18%;
     --secondary-foreground: 40 35% 92%;
 
-    --muted: 345 15% 20%;
-    --muted-foreground: 345 15% 60%;
+    --muted: 330 15% 20%;
+    --muted-foreground: 330 15% 60%;
 
     --accent: 42 85% 55%;
     --accent-foreground: 25 30% 10%;
@@ -102,18 +103,18 @@
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 345 20% 25%;
-    --input: 345 20% 15%;
-    --ring: 345 65% 55%;
+    --border: 330 20% 25%;
+    --input: 330 20% 15%;
+    --ring: 330 80% 60%;
 
-    --sidebar-background: 345 25% 12%;
+    --sidebar-background: 330 25% 12%;
     --sidebar-foreground: 40 35% 92%;
-    --sidebar-primary: 345 65% 55%;
-    --sidebar-primary-foreground: 345 30% 8%;
-    --sidebar-accent: 345 20% 18%;
+    --sidebar-primary: 330 80% 60%;
+    --sidebar-primary-foreground: 330 30% 8%;
+    --sidebar-accent: 330 20% 18%;
     --sidebar-accent-foreground: 40 35% 92%;
-    --sidebar-border: 345 20% 25%;
-    --sidebar-ring: 345 65% 55%;
+    --sidebar-border: 330 20% 25%;
+    --sidebar-ring: 330 80% 60%;
   }
 }
 
@@ -133,21 +134,63 @@
 }
 
 @layer utilities {
-  /* Gold gradient for CTAs and accents (30% usage) */
+  /* Gold gradient for CTAs and accents ONLY */
   .gold-gradient {
     background: linear-gradient(135deg, hsl(45 85% 58%) 0%, hsl(42 90% 50%) 50%, hsl(38 95% 38%) 100%);
   }
 
-  /* Rose gradient variations for primary elements (70% usage) */
-  .rose-gradient {
-    background: linear-gradient(135deg, hsl(345 60% 50%) 0%, hsl(345 70% 35%) 50%, hsl(345 75% 25%) 100%);
+  /* Vibrant Pink gradient variations for primary elements */
+  .pink-gradient {
+    background: linear-gradient(135deg, hsl(330 80% 60%) 0%, hsl(330 85% 55%) 50%, hsl(330 85% 45%) 100%);
   }
 
-  .rose-gradient-soft {
-    background: linear-gradient(135deg, hsl(345 50% 55%) 0%, hsl(345 65% 40%) 50%, hsl(345 70% 30%) 100%);
+  .pink-gradient-soft {
+    background: linear-gradient(135deg, hsl(330 75% 65%) 0%, hsl(330 80% 58%) 50%, hsl(330 85% 50%) 100%);
   }
 
-  /* Gold gradient with damask pattern overlay */
+  .pink-gradient-vibrant {
+    background: linear-gradient(135deg, hsl(330 90% 62%) 0%, hsl(330 85% 55%) 50%, hsl(330 90% 48%) 100%);
+  }
+
+  /* Pink gradient with damask pattern overlay */
+  .pink-gradient-damask {
+    background: 
+      linear-gradient(135deg, hsl(330 85% 55% / 0.95) 0%, hsl(330 85% 52% / 0.98) 50%, hsl(330 85% 48% / 0.95) 100%);
+    position: relative;
+  }
+  .pink-gradient-damask::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0C30 16.569 16.569 30 0 30c16.569 0 30 13.431 30 30 0-16.569 13.431-30 30-30C43.431 30 30 16.569 30 0z' fill='%23ffffff' fill-opacity='0.08'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+
+  /* Pink gradient with organic flow */
+  .pink-gradient-organic {
+    background: 
+      linear-gradient(145deg, hsl(330 85% 58%) 0%, hsl(330 85% 52%) 50%, hsl(330 85% 46%) 100%);
+    position: relative;
+  }
+  .pink-gradient-organic::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M100,10 C130,30 170,50 180,100 C190,150 150,180 100,190 C50,200 20,160 10,100 C0,40 70,-10 100,10Z' fill='%23ffffff' opacity='0.05'/%3E%3C/svg%3E"),
+      radial-gradient(ellipse 40% 30% at 20% 30%, hsl(0 0% 100% / 0.15) 0%, transparent 50%),
+      radial-gradient(ellipse 50% 40% at 80% 70%, hsl(0 0% 100% / 0.1) 0%, transparent 50%);
+    background-size: 200px 200px, 100% 100%, 100% 100%;
+    pointer-events: none;
+  }
+
+  /* Pink gradient with streak effect */
+  .pink-gradient-streak {
+    background: 
+      radial-gradient(ellipse 150% 80% at 50% -20%, hsl(330 80% 70% / 0.4) 0%, transparent 60%),
+      linear-gradient(180deg, hsl(330 85% 58%) 0%, hsl(330 85% 52%) 40%, hsl(330 85% 45%) 100%);
+  }
+
+  /* Gold gradient with damask pattern overlay - for accent areas only */
   .gold-gradient-damask {
     background: 
       linear-gradient(135deg, hsl(38 85% 45% / 0.95) 0%, hsl(42 90% 50% / 0.98) 50%, hsl(35 90% 38% / 0.95) 100%);
@@ -158,20 +201,6 @@
     position: absolute;
     inset: 0;
     background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0C30 16.569 16.569 30 0 30c16.569 0 30 13.431 30 30 0-16.569 13.431-30 30-30C43.431 30 30 16.569 30 0z' fill='%23ffffff' fill-opacity='0.03'/%3E%3C/svg%3E");
-    pointer-events: none;
-  }
-
-  /* Rose gradient with damask pattern */
-  .rose-gradient-damask {
-    background: 
-      linear-gradient(135deg, hsl(345 65% 40% / 0.95) 0%, hsl(345 70% 35% / 0.98) 50%, hsl(345 75% 28% / 0.95) 100%);
-    position: relative;
-  }
-  .rose-gradient-damask::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0C30 16.569 16.569 30 0 30c16.569 0 30 13.431 30 30 0-16.569 13.431-30 30-30C43.431 30 30 16.569 30 0z' fill='%23ffffff' fill-opacity='0.05'/%3E%3C/svg%3E");
     pointer-events: none;
   }
 
@@ -221,9 +250,9 @@
       linear-gradient(180deg, hsl(40 80% 45%) 0%, hsl(38 75% 38%) 100%);
   }
 
-  /* Rose-Gold hybrid gradient for special headings */
-  .rose-gold-text-gradient {
-    background: linear-gradient(135deg, hsl(345 65% 45%) 0%, hsl(345 70% 35%) 40%, hsl(42 85% 50%) 100%);
+  /* Pink-Gold hybrid gradient for special headings */
+  .pink-gold-text-gradient {
+    background: linear-gradient(135deg, hsl(330 85% 58%) 0%, hsl(330 85% 50%) 40%, hsl(42 85% 50%) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -237,9 +266,9 @@
     background-clip: text;
   }
 
-  /* Rose text gradient */
-  .rose-text-gradient {
-    background: linear-gradient(135deg, hsl(345 60% 50%) 0%, hsl(345 70% 38%) 50%, hsl(345 75% 28%) 100%);
+  /* Pink text gradient */
+  .pink-text-gradient {
+    background: linear-gradient(135deg, hsl(330 80% 60%) 0%, hsl(330 85% 55%) 50%, hsl(330 85% 48%) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -249,8 +278,8 @@
     border-color: hsl(42 90% 50% / 0.4);
   }
 
-  .rose-border {
-    border-color: hsl(345 70% 35% / 0.3);
+  .pink-border {
+    border-color: hsl(330 85% 55% / 0.3);
   }
 
   .gold-glow {
@@ -264,15 +293,15 @@
       0 0 100px hsl(42 90% 50% / 0.15);
   }
 
-  .rose-glow {
-    box-shadow: 0 0 25px hsl(345 70% 35% / 0.25), 0 0 50px hsl(345 70% 35% / 0.1);
+  .pink-glow {
+    box-shadow: 0 0 25px hsl(330 85% 55% / 0.35), 0 0 50px hsl(330 85% 55% / 0.2);
   }
 
-  .rose-glow-intense {
+  .pink-glow-intense {
     box-shadow: 
-      0 0 30px hsl(345 70% 35% / 0.4),
-      0 0 60px hsl(345 70% 35% / 0.2),
-      0 0 100px hsl(345 70% 35% / 0.1);
+      0 0 30px hsl(330 85% 55% / 0.5),
+      0 0 60px hsl(330 85% 55% / 0.3),
+      0 0 100px hsl(330 85% 55% / 0.15);
   }
 
   /* Decorative line separators */
@@ -281,9 +310,9 @@
     background: linear-gradient(90deg, transparent 0%, hsl(42 90% 50% / 0.5) 50%, transparent 100%);
   }
 
-  .rose-line-separator {
+  .pink-line-separator {
     height: 1px;
-    background: linear-gradient(90deg, transparent 0%, hsl(345 70% 35% / 0.4) 50%, transparent 100%);
+    background: linear-gradient(90deg, transparent 0%, hsl(330 85% 55% / 0.5) 50%, transparent 100%);
   }
 
   .gold-ornament {
@@ -313,7 +342,7 @@
     pointer-events: none;
   }
 
-  /* Rich card styling with rose hover */
+  /* Rich card styling with pink hover */
   .card-hover {
     @apply transition-all duration-500;
   }
@@ -321,7 +350,7 @@
   .card-hover:hover {
     @apply transform -translate-y-2;
     box-shadow: 
-      0 20px 60px hsl(345 70% 35% / 0.15),
+      0 20px 60px hsl(330 85% 55% / 0.15),
       0 8px 25px hsl(0 0% 0% / 0.1);
   }
 
@@ -333,7 +362,7 @@
     content: '';
     position: absolute;
     inset: -8px;
-    border: 1px solid hsl(345 70% 35% / 0.2);
+    border: 1px solid hsl(330 85% 55% / 0.2);
     border-radius: inherit;
     pointer-events: none;
   }
@@ -352,21 +381,21 @@
     position: absolute;
     inset: 0;
     background-image: 
-      /* Floating circles with rose tint */
-      radial-gradient(ellipse 300px 300px at 10% 20%, hsl(345 70% 35% / 0.04) 0%, transparent 50%),
+      /* Floating circles with pink tint */
+      radial-gradient(ellipse 300px 300px at 10% 20%, hsl(330 85% 55% / 0.04) 0%, transparent 50%),
       radial-gradient(ellipse 250px 250px at 85% 80%, hsl(42 90% 50% / 0.03) 0%, transparent 50%),
-      radial-gradient(ellipse 180px 180px at 50% 50%, hsl(345 70% 35% / 0.02) 0%, transparent 50%),
+      radial-gradient(ellipse 180px 180px at 50% 50%, hsl(330 85% 55% / 0.02) 0%, transparent 50%),
       /* Diagonal stripes */
       repeating-linear-gradient(
         135deg,
         transparent,
         transparent 40px,
-        hsl(345 70% 35% / 0.01) 40px,
-        hsl(345 70% 35% / 0.01) 41px
+        hsl(330 85% 55% / 0.01) 40px,
+        hsl(330 85% 55% / 0.01) 41px
       ),
       /* Subtle grid */
-      linear-gradient(hsl(345 70% 35% / 0.015) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(345 70% 35% / 0.015) 1px, transparent 1px);
+      linear-gradient(hsl(330 85% 55% / 0.015) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(330 85% 55% / 0.015) 1px, transparent 1px);
     background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 80px 80px, 80px 80px;
     pointer-events: none;
     z-index: 0;
@@ -382,12 +411,12 @@
     inset: 0;
     background-image:
       /* Curved wave patterns */
-      url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 50 Q 25 30, 50 50 T 100 50' stroke='%238B3A5C' stroke-width='0.5' fill='none' opacity='0.04'/%3E%3C/svg%3E"),
+      url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 50 Q 25 30, 50 50 T 100 50' stroke='%23E91E8C' stroke-width='0.5' fill='none' opacity='0.04'/%3E%3C/svg%3E"),
       /* Subtle radial glows */
-      radial-gradient(ellipse 400px 300px at 0% 100%, hsl(345 70% 35% / 0.05) 0%, transparent 60%),
+      radial-gradient(ellipse 400px 300px at 0% 100%, hsl(330 85% 55% / 0.05) 0%, transparent 60%),
       radial-gradient(ellipse 350px 350px at 100% 0%, hsl(42 90% 50% / 0.04) 0%, transparent 60%),
       /* Dotted pattern */
-      radial-gradient(circle 1px at center, hsl(345 70% 35% / 0.05) 0%, transparent 100%);
+      radial-gradient(circle 1px at center, hsl(330 85% 55% / 0.05) 0%, transparent 100%);
     background-size: 100px 100px, 100% 100%, 100% 100%, 40px 40px;
     pointer-events: none;
     z-index: 0;
@@ -403,9 +432,9 @@
     inset: 0;
     background-image:
       /* Diamond pattern */
-      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0 L60 30 L30 60 L0 30 Z' stroke='%238B3A5C' stroke-width='0.5' fill='none' opacity='0.03'/%3E%3C/svg%3E"),
+      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0 L60 30 L30 60 L0 30 Z' stroke='%23E91E8C' stroke-width='0.5' fill='none' opacity='0.03'/%3E%3C/svg%3E"),
       /* Corner glows */
-      radial-gradient(ellipse 250px 250px at 5% 5%, hsl(345 70% 35% / 0.04) 0%, transparent 50%),
+      radial-gradient(ellipse 250px 250px at 5% 5%, hsl(330 85% 55% / 0.04) 0%, transparent 50%),
       radial-gradient(ellipse 250px 250px at 95% 95%, hsl(42 90% 50% / 0.03) 0%, transparent 50%);
     background-size: 60px 60px, 100% 100%, 100% 100%;
     pointer-events: none;
@@ -413,52 +442,68 @@
   }
 
   /* ========================================
-     ROSE SECTION BACKGROUNDS
-     For rose-gradient sections
+     PINK SECTION BACKGROUNDS
+     For vibrant pink background sections
      ======================================== */
 
-  /* Rose section with art deco pattern */
-  .rose-section-artdeco {
+  /* Pink section with art deco pattern - WHITE content */
+  .pink-section-artdeco {
     position: relative;
   }
-  .rose-section-artdeco::before {
+  .pink-section-artdeco::before {
     content: '';
     position: absolute;
     inset: 0;
     background-image:
       /* Art deco fan pattern */
-      url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 0 C40 22, 22 40, 0 40 C22 40, 40 58, 40 80 C40 58, 58 40, 80 40 C58 40, 40 22, 40 0Z' fill='%23ffffff' opacity='0.04'/%3E%3C/svg%3E"),
+      url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 0 C40 22, 22 40, 0 40 C22 40, 40 58, 40 80 C40 58, 58 40, 80 40 C58 40, 40 22, 40 0Z' fill='%23ffffff' opacity='0.06'/%3E%3C/svg%3E"),
       /* Subtle sunburst from corners */
-      conic-gradient(from 225deg at 0% 0%, hsl(0 0% 100% / 0.05) 0deg, transparent 90deg),
-      conic-gradient(from 45deg at 100% 100%, hsl(0 0% 100% / 0.05) 0deg, transparent 90deg);
+      conic-gradient(from 225deg at 0% 0%, hsl(0 0% 100% / 0.08) 0deg, transparent 90deg),
+      conic-gradient(from 45deg at 100% 100%, hsl(0 0% 100% / 0.08) 0deg, transparent 90deg);
     background-size: 80px 80px, 100% 100%, 100% 100%;
     pointer-events: none;
     z-index: 0;
   }
 
-  /* Rose section with organic shapes */
-  .rose-section-organic {
+  /* Pink section with organic shapes */
+  .pink-section-organic {
     position: relative;
   }
-  .rose-section-organic::before {
+  .pink-section-organic::before {
     content: '';
     position: absolute;
     inset: 0;
     background-image:
       /* Organic blob shapes */
-      url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M100,10 C130,30 170,50 180,100 C190,150 150,180 100,190 C50,200 20,160 10,100 C0,40 70,-10 100,10Z' fill='%23ffffff' opacity='0.03'/%3E%3C/svg%3E"),
+      url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M100,10 C130,30 170,50 180,100 C190,150 150,180 100,190 C50,200 20,160 10,100 C0,40 70,-10 100,10Z' fill='%23ffffff' opacity='0.05'/%3E%3C/svg%3E"),
       /* Soft highlights */
-      radial-gradient(ellipse 40% 30% at 20% 30%, hsl(0 0% 100% / 0.12) 0%, transparent 50%),
-      radial-gradient(ellipse 50% 40% at 80% 70%, hsl(0 0% 100% / 0.08) 0%, transparent 50%),
+      radial-gradient(ellipse 40% 30% at 20% 30%, hsl(0 0% 100% / 0.15) 0%, transparent 50%),
+      radial-gradient(ellipse 50% 40% at 80% 70%, hsl(0 0% 100% / 0.1) 0%, transparent 50%),
       /* Horizontal streaks */
       repeating-linear-gradient(
         0deg,
         transparent,
         transparent 100px,
-        hsl(0 0% 100% / 0.02) 100px,
-        hsl(0 0% 100% / 0.02) 101px
+        hsl(0 0% 100% / 0.03) 100px,
+        hsl(0 0% 100% / 0.03) 101px
       );
     background-size: 200px 200px, 100% 100%, 100% 100%, 100% 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Pink section with circles */
+  .pink-section-circles {
+    position: relative;
+  }
+  .pink-section-circles::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle 150px at 10% 90%, hsl(0 0% 100% / 0.08) 0%, transparent 50%),
+      radial-gradient(circle 100px at 90% 20%, hsl(42 90% 50% / 0.1) 0%, transparent 50%),
+      radial-gradient(circle 80px at 50% 50%, hsl(0 0% 100% / 0.05) 0%, transparent 50%);
     pointer-events: none;
     z-index: 0;
   }
@@ -492,6 +537,21 @@
       radial-gradient(ellipse 40% 30% at 20% 30%, hsl(0 0% 100% / 0.12) 0%, transparent 50%),
       radial-gradient(ellipse 50% 40% at 80% 70%, hsl(0 0% 100% / 0.08) 0%, transparent 50%);
     background-size: 200px 200px, 100% 100%, 100% 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .gold-section-circles {
+    position: relative;
+  }
+  .gold-section-circles::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle 150px at 10% 90%, hsl(0 0% 100% / 0.06) 0%, transparent 50%),
+      radial-gradient(circle 100px at 90% 20%, hsl(0 0% 100% / 0.08) 0%, transparent 50%),
+      radial-gradient(circle 80px at 50% 50%, hsl(0 0% 100% / 0.04) 0%, transparent 50%);
     pointer-events: none;
     z-index: 0;
   }

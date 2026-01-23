@@ -73,7 +73,7 @@ const FinalCTASection = () => {
           >
             You've Read the Story.
             <br />
-            <span className="rose-gold-text-gradient">Now, It's Time to Live It.</span>
+            <span className="pink-gold-text-gradient">Now, It's Time to Live It.</span>
           </motion.h2>
           
           <motion.p 

@@ -18,12 +18,13 @@ export default {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
-        // Deep Rose Pink - Primary (70% usage)
-        rose: {
-          DEFAULT: "hsl(345 70% 35%)",
-          light: "hsl(345 60% 50%)",
-          dark: "hsl(345 75% 25%)",
-          muted: "hsl(345 30% 70%)",
+        // Vibrant Hot Pink / Magenta - Primary (70% usage)
+        pink: {
+          DEFAULT: "hsl(330 85% 55%)",
+          light: "hsl(330 80% 65%)",
+          dark: "hsl(330 85% 45%)",
+          muted: "hsl(330 40% 75%)",
+          vibrant: "hsl(330 90% 58%)",
         },
         // Gold - Accent (30% usage)
         gold: {
