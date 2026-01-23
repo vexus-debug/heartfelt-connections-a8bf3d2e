@@ -36,25 +36,25 @@ const ServiceCategory = ({
     >
       {/* Subtle decorative background pattern */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-0 left-1/4 w-96 h-96 rounded-full bg-primary/20 blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 rounded-full bg-primary/20 blur-3xl" />
+        <div className="absolute top-0 left-1/4 w-96 h-96 rounded-full bg-primary/15 blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 rounded-full bg-accent/10 blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Category Header */}
           <div className="text-center mb-12 space-y-6">
-            {/* Gold decorative line */}
+            {/* Gold icon with decorative lines */}
             <div className="flex items-center justify-center gap-4">
               <div className="w-16 h-px bg-gradient-to-r from-transparent via-primary to-transparent" />
               <div className="w-16 h-16 rounded-full gold-gradient flex items-center justify-center gold-glow">
-                <Icon className="w-8 h-8 text-primary-foreground" />
+                <Icon className="w-8 h-8 text-charcoal" />
               </div>
               <div className="w-16 h-px bg-gradient-to-r from-transparent via-primary to-transparent" />
             </div>
 
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold">
-              <span className="gold-text-gradient">{title}</span>
+              <span className="rose-gold-text-gradient">{title}</span>
             </h2>
 
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
@@ -70,7 +70,7 @@ const ServiceCategory = ({
           </div>
 
           {/* Services Accordion */}
-          <div className="bg-card/50 backdrop-blur-sm rounded-2xl border border-primary/20 overflow-hidden gold-glow">
+          <div className="bg-card/80 backdrop-blur-sm rounded-2xl border border-primary/15 overflow-hidden shadow-sm">
             <Accordion type="single" collapsible className="w-full">
               {services.map((service, serviceIndex) => (
                 <ServiceAccordionItem

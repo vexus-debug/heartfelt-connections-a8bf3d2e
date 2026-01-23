@@ -30,21 +30,21 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-28 bg-background dark-section-abstract relative overflow-hidden">
+    <section className="py-28 bg-background cream-section-abstract relative overflow-hidden">
       {/* Decorative elements */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/25 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/25 to-transparent" />
       
       {/* Floating quotes */}
       <motion.div 
-        className="absolute top-20 left-20 text-primary/10 text-9xl font-serif"
+        className="absolute top-20 left-20 text-primary/8 text-9xl font-serif"
         animate={{ y: [0, -10, 0], rotate: [0, 5, 0] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
       >
         "
       </motion.div>
       <motion.div 
-        className="absolute bottom-20 right-20 text-primary/10 text-9xl font-serif rotate-180"
+        className="absolute bottom-20 right-20 text-primary/8 text-9xl font-serif rotate-180"
         animate={{ y: [0, 10, 0], rotate: [180, 175, 180] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 1 }}
       >
@@ -69,7 +69,7 @@ const TestimonialsSection = () => {
             Words From Our Family
           </motion.span>
           <motion.h2 
-            className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-6"
+            className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-6 text-foreground"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
@@ -93,12 +93,12 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <motion.div 
               key={index}
-              className="relative p-8 rounded-3xl bg-card border border-primary/15 hover:border-primary/40 transition-all duration-500 group"
+              className="relative p-8 rounded-3xl bg-card border border-primary/12 hover:border-primary/30 transition-all duration-500 group shadow-sm"
               initial={{ opacity: 0, y: 50, rotateX: -10 }}
               whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
               transition={{ duration: 0.7, delay: 0.2 + index * 0.15 }}
               viewport={{ once: true, margin: "-50px" }}
-              whileHover={{ y: -8, boxShadow: "0 20px 60px rgba(212, 175, 55, 0.15)" }}
+              whileHover={{ y: -8, boxShadow: "0 20px 60px rgba(139, 58, 92, 0.1)" }}
             >
               {/* Quote icon */}
               <motion.div
@@ -106,10 +106,10 @@ const TestimonialsSection = () => {
                 whileHover={{ scale: 1.2, rotate: 10 }}
                 transition={{ duration: 0.3 }}
               >
-                <Quote className="w-12 h-12 text-primary/20 group-hover:text-primary/40 transition-colors duration-500" />
+                <Quote className="w-12 h-12 text-primary/15 group-hover:text-primary/30 transition-colors duration-500" />
               </motion.div>
               
-              {/* Rating stars */}
+              {/* Rating stars - Gold */}
               <div className="flex gap-1 mb-5">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <motion.div
@@ -119,7 +119,7 @@ const TestimonialsSection = () => {
                     transition={{ duration: 0.3, delay: 0.5 + i * 0.1 }}
                     viewport={{ once: true }}
                   >
-                    <Star className="w-5 h-5 fill-primary text-primary" />
+                    <Star className="w-5 h-5 fill-accent text-accent" />
                   </motion.div>
                 ))}
               </div>
@@ -139,7 +139,7 @@ const TestimonialsSection = () => {
               </div>
               
               {/* Corner decoration */}
-              <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-primary/20 rounded-br-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-primary/15 rounded-br-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </motion.div>
           ))}
         </div>

@@ -5,44 +5,44 @@ import { motion } from "framer-motion";
 
 const FinalCTASection = () => {
   return (
-    <section className="py-36 bg-background dark-section-diamonds relative overflow-hidden">
+    <section className="py-36 bg-background cream-section-diamonds relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute inset-0">
         <motion.div 
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl"
-          animate={{ scale: [1, 1.1, 1], opacity: [0.1, 0.15, 0.1] }}
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/8 rounded-full blur-3xl"
+          animate={{ scale: [1, 1.1, 1], opacity: [0.08, 0.12, 0.08] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div 
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-primary/15 rounded-full blur-2xl"
-          animate={{ scale: [1.1, 1, 1.1], opacity: [0.15, 0.2, 0.15] }}
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-accent/10 rounded-full blur-2xl"
+          animate={{ scale: [1.1, 1, 1.1], opacity: [0.1, 0.15, 0.1] }}
           transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
         />
       </div>
       
       {/* Top and bottom lines */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
       
       {/* Corner decorations */}
       <motion.div 
-        className="absolute top-12 left-12 w-24 h-24 border-l-2 border-t-2 border-primary/30 rounded-tl-3xl"
-        animate={{ opacity: [0.3, 0.6, 0.3] }}
+        className="absolute top-12 left-12 w-24 h-24 border-l-2 border-t-2 border-primary/25 rounded-tl-3xl"
+        animate={{ opacity: [0.25, 0.5, 0.25] }}
         transition={{ duration: 4, repeat: Infinity }}
       />
       <motion.div 
-        className="absolute top-12 right-12 w-24 h-24 border-r-2 border-t-2 border-primary/30 rounded-tr-3xl"
-        animate={{ opacity: [0.3, 0.6, 0.3] }}
+        className="absolute top-12 right-12 w-24 h-24 border-r-2 border-t-2 border-primary/25 rounded-tr-3xl"
+        animate={{ opacity: [0.25, 0.5, 0.25] }}
         transition={{ duration: 4, repeat: Infinity, delay: 1 }}
       />
       <motion.div 
-        className="absolute bottom-12 left-12 w-24 h-24 border-l-2 border-b-2 border-primary/30 rounded-bl-3xl"
-        animate={{ opacity: [0.3, 0.6, 0.3] }}
+        className="absolute bottom-12 left-12 w-24 h-24 border-l-2 border-b-2 border-primary/25 rounded-bl-3xl"
+        animate={{ opacity: [0.25, 0.5, 0.25] }}
         transition={{ duration: 4, repeat: Infinity, delay: 2 }}
       />
       <motion.div 
-        className="absolute bottom-12 right-12 w-24 h-24 border-r-2 border-b-2 border-primary/30 rounded-br-3xl"
-        animate={{ opacity: [0.3, 0.6, 0.3] }}
+        className="absolute bottom-12 right-12 w-24 h-24 border-r-2 border-b-2 border-primary/25 rounded-br-3xl"
+        animate={{ opacity: [0.25, 0.5, 0.25] }}
         transition={{ duration: 4, repeat: Infinity, delay: 3 }}
       />
       
@@ -65,7 +65,7 @@ const FinalCTASection = () => {
           </motion.p>
           
           <motion.h2 
-            className="font-serif text-4xl md:text-5xl lg:text-7xl font-bold leading-tight"
+            className="font-serif text-4xl md:text-5xl lg:text-7xl font-bold leading-tight text-foreground"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
@@ -73,7 +73,7 @@ const FinalCTASection = () => {
           >
             You've Read the Story.
             <br />
-            <span className="gold-text-gradient">Now, It's Time to Live It.</span>
+            <span className="rose-gold-text-gradient">Now, It's Time to Live It.</span>
           </motion.h2>
           
           <motion.p 
@@ -111,7 +111,7 @@ const FinalCTASection = () => {
               <Button 
                 asChild 
                 size="lg" 
-                className="gold-gradient text-primary-foreground hover:opacity-90 text-lg px-10 py-7 shadow-lg gold-glow-intense group"
+                className="gold-gradient text-charcoal hover:opacity-90 text-lg px-10 py-7 shadow-lg gold-glow-intense group font-semibold"
               >
                 <a
                   href="https://wa.me/2347071979153?text=Hello%20La%20Belle%20Lounge%20%26%20Spa%2C%20I%20would%20like%20to%20book%20an%20appointment."

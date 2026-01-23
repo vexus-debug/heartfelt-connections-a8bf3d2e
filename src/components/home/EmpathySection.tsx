@@ -3,7 +3,7 @@ import gallery10 from "@/assets/gallery/gallery-10.jpg";
 
 const EmpathySection = () => {
   return (
-    <section className="py-28 gold-gradient-damask gold-section-artdeco relative overflow-hidden">
+    <section className="py-28 rose-gradient-damask rose-section-artdeco relative overflow-hidden">
       {/* Decorative floating orbs */}
       <div className="floating-orb w-96 h-96 bg-primary-foreground/10 top-0 -left-48" />
       <div className="floating-orb w-64 h-64 bg-primary-foreground/5 bottom-0 right-0" />
@@ -28,7 +28,7 @@ const EmpathySection = () => {
               viewport={{ once: true }}
               className="inline-block"
             >
-              <span className="text-primary-foreground/60 uppercase tracking-[0.3em] text-sm font-medium">
+              <span className="text-primary-foreground/70 uppercase tracking-[0.3em] text-sm font-medium">
                 ✦ A Message For You ✦
               </span>
             </motion.div>
@@ -54,7 +54,7 @@ const EmpathySection = () => {
                 We know life can be exhausting. The stress, the demands, the endless to-do lists... 
                 Your body carries it all, and sometimes your spirit feels it too.
               </p>
-              <p className="text-primary-foreground/80 text-lg leading-relaxed">
+              <p className="text-primary-foreground/85 text-lg leading-relaxed">
                 But here's what we believe: <span className="font-semibold italic">you are worthy of rest</span>. 
                 You are worthy of care. You are worthy of feeling beautiful, inside and out.
               </p>

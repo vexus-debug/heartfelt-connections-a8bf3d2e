@@ -10,7 +10,7 @@ const FloatingButtons = () => {
           href="https://www.instagram.com/labelleng_spa"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-12 h-12 rounded-full gold-gradient flex items-center justify-center text-primary-foreground shadow-lg hover:scale-110 transition-transform duration-300"
+          className="w-12 h-12 rounded-full rose-gradient flex items-center justify-center text-primary-foreground shadow-lg hover:scale-110 transition-transform duration-300"
           aria-label="Follow us on Instagram"
         >
           <Instagram className="w-5 h-5" />
@@ -19,17 +19,17 @@ const FloatingButtons = () => {
           href="https://www.facebook.com/labelleng_spa"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-12 h-12 rounded-full gold-gradient flex items-center justify-center text-primary-foreground shadow-lg hover:scale-110 transition-transform duration-300"
+          className="w-12 h-12 rounded-full rose-gradient flex items-center justify-center text-primary-foreground shadow-lg hover:scale-110 transition-transform duration-300"
           aria-label="Follow us on Facebook"
         >
           <Facebook className="w-5 h-5" />
         </a>
       </div>
 
-      {/* Book Now Button - Bottom Right */}
+      {/* Book Now Button - Bottom Right - Gold accent */}
       <Link
         to="/booking"
-        className="fixed bottom-6 right-6 z-40 flex items-center gap-2 px-5 py-3 rounded-full gold-gradient text-primary-foreground font-medium shadow-lg hover:scale-105 transition-transform duration-300"
+        className="fixed bottom-6 right-6 z-40 flex items-center gap-2 px-5 py-3 rounded-full gold-gradient text-charcoal font-semibold shadow-lg hover:scale-105 transition-transform duration-300"
       >
         <CalendarCheck className="w-5 h-5" />
         <span className="hidden sm:inline">Book Now</span>
