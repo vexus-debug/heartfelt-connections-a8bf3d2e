@@ -20,7 +20,7 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-primary/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-primary/15 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -58,7 +58,7 @@ const Navbar = () => {
               <Phone className="w-4 h-4" />
               +234 707 197 9153
             </a>
-            <Button asChild className="gold-gradient text-primary-foreground hover:opacity-90">
+            <Button asChild className="gold-gradient text-charcoal hover:opacity-90 font-semibold">
               <a
                 href="https://wa.me/2347071979153?text=Hello%20La%20Belle%20Lounge%20%26%20Spa%2C%20I%20would%20like%20to%20book%20an%20appointment."
                 target="_blank"
@@ -81,7 +81,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden py-4 border-t border-primary/20 animate-fade-in">
+          <div className="lg:hidden py-4 border-t border-primary/15 animate-fade-in">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <Link
@@ -97,7 +97,7 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <div className="pt-4 border-t border-primary/20">
+              <div className="pt-4 border-t border-primary/15">
                 <a
                   href="tel:+2347071979153"
                   className="flex items-center gap-2 text-muted-foreground mb-4"
@@ -105,7 +105,7 @@ const Navbar = () => {
                   <Phone className="w-4 h-4" />
                   +234 707 197 9153
                 </a>
-                <Button asChild className="w-full gold-gradient text-primary-foreground">
+                <Button asChild className="w-full gold-gradient text-charcoal font-semibold">
                   <a
                     href="https://wa.me/2347071979153?text=Hello%20La%20Belle%20Lounge%20%26%20Spa%2C%20I%20would%20like%20to%20book%20an%20appointment."
                     target="_blank"

@@ -57,25 +57,25 @@ const HeroSection = () => {
     <section 
       ref={containerRef}
       onMouseMove={handleMouseMove}
-      className="relative min-h-[100vh] flex items-center overflow-hidden bg-background dark-section-curves"
+      className="relative min-h-[100vh] flex items-center overflow-hidden bg-background cream-section-curves"
     >
-      {/* Floating decorative orbs */}
+      {/* Floating decorative orbs - rose and gold */}
       <motion.div 
-        className="absolute top-20 left-[5%] w-64 h-64 bg-primary/15 rounded-full blur-3xl pointer-events-none"
+        className="absolute top-20 left-[5%] w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none"
         style={{ x: orbX, y: orbY }}
-        animate={{ scale: [1, 1.1, 1], opacity: [0.15, 0.25, 0.15] }}
+        animate={{ scale: [1, 1.1, 1], opacity: [0.1, 0.18, 0.1] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
       />
       <motion.div 
-        className="absolute bottom-32 right-[45%] w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none"
+        className="absolute bottom-32 right-[45%] w-48 h-48 bg-accent/8 rounded-full blur-3xl pointer-events-none"
         style={{ x: useTransform(smoothMouseX, [-0.5, 0.5], [-20, 20]), y: useTransform(smoothMouseY, [-0.5, 0.5], [-20, 20]) }}
-        animate={{ scale: [1.2, 1, 1.2], opacity: [0.1, 0.2, 0.1] }}
+        animate={{ scale: [1.2, 1, 1.2], opacity: [0.08, 0.15, 0.08] }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
       />
       <motion.div 
-        className="absolute top-[40%] right-[10%] w-32 h-32 bg-primary/20 rounded-full blur-2xl pointer-events-none"
+        className="absolute top-[40%] right-[10%] w-32 h-32 bg-primary/15 rounded-full blur-2xl pointer-events-none"
         style={{ x: useTransform(smoothMouseX, [-0.5, 0.5], [25, -25]), y: useTransform(smoothMouseY, [-0.5, 0.5], [25, -25]) }}
-        animate={{ scale: [1, 1.3, 1], opacity: [0.2, 0.3, 0.2] }}
+        animate={{ scale: [1, 1.3, 1], opacity: [0.15, 0.25, 0.15] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       />
 
@@ -101,7 +101,7 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.4 }}
             >
-              <span className="gold-text-gradient">La Belle</span>
+              <span className="rose-gold-text-gradient">La Belle</span>
               <br />
               <span className="text-foreground">Lounge & Spa</span>
             </motion.h1>
@@ -123,7 +123,7 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.9 }}
             >
               <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
-                <Button asChild size="lg" className="gold-gradient text-primary-foreground hover:opacity-90 text-base px-8 py-6 shadow-lg gold-glow">
+                <Button asChild size="lg" className="gold-gradient text-charcoal hover:opacity-90 text-base px-8 py-6 shadow-lg gold-glow font-semibold">
                   <Link to="/booking">
                     Book Your Experience
                     <ArrowRight className="ml-2 w-5 h-5" />
@@ -131,7 +131,7 @@ const HeroSection = () => {
                 </Button>
               </motion.div>
               <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
-                <Button asChild variant="outline" size="lg" className="border-primary/30 hover:bg-primary/10 text-base px-8 py-6">
+                <Button asChild variant="outline" size="lg" className="border-primary/40 text-primary hover:bg-primary hover:text-primary-foreground text-base px-8 py-6">
                   <Link to="/services">
                     Explore Services
                   </Link>
@@ -139,7 +139,7 @@ const HeroSection = () => {
               </motion.div>
             </motion.div>
 
-            {/* Decorative gold line */}
+            {/* Decorative rose line */}
             <motion.div 
               className="w-24 h-px bg-gradient-to-r from-primary/60 to-transparent"
               initial={{ scaleX: 0, originX: 0 }}
@@ -161,7 +161,7 @@ const HeroSection = () => {
             
             {/* Secondary decorative frame */}
             <motion.div 
-              className="absolute -inset-2 lg:-inset-6 border border-primary/10 rounded-3xl"
+              className="absolute -inset-2 lg:-inset-6 border border-accent/15 rounded-3xl"
               style={{ 
                 x: useTransform(smoothMouseX, [-0.5, 0.5], [-12, 12]), 
                 y: useTransform(smoothMouseY, [-0.5, 0.5], [-12, 12]) 
@@ -171,7 +171,7 @@ const HeroSection = () => {
               transition={{ duration: 1, delay: 0.3 }}
             />
 
-            {/* Corner accents */}
+            {/* Corner accents - rose colored */}
             <motion.div 
               className="absolute -top-2 -left-2 w-8 h-8 border-t-2 border-l-2 border-primary/40 rounded-tl-lg"
               initial={{ opacity: 0 }}
@@ -222,8 +222,8 @@ const HeroSection = () => {
               ))}
               
               {/* Gradient overlays */}
-              <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
-              <div className="absolute inset-0 bg-gradient-to-r from-background/30 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-transparent" />
               
               {/* Image indicator dots */}
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
@@ -233,8 +233,8 @@ const HeroSection = () => {
                     onClick={() => setCurrentImage(index)}
                     className={`w-2 h-2 rounded-full transition-all duration-300 ${
                       currentImage === index 
-                        ? 'bg-primary w-6' 
-                        : 'bg-foreground/30 hover:bg-foreground/50'
+                        ? 'bg-accent w-6' 
+                        : 'bg-primary-foreground/50 hover:bg-primary-foreground/70'
                     }`}
                     aria-label={`View image ${index + 1}`}
                   />
@@ -242,7 +242,7 @@ const HeroSection = () => {
               </div>
             </motion.div>
 
-            {/* Floating accent elements */}
+            {/* Floating accent elements - gold gradient */}
             <motion.div 
               className="absolute -bottom-4 -left-4 lg:-bottom-8 lg:-left-8 w-20 h-20 lg:w-28 lg:h-28 rounded-full gold-gradient opacity-80 blur-sm"
               style={{ 

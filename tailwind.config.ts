@@ -18,20 +18,28 @@ export default {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
+        // Deep Rose Pink - Primary (70% usage)
+        rose: {
+          DEFAULT: "hsl(345 70% 35%)",
+          light: "hsl(345 60% 50%)",
+          dark: "hsl(345 75% 25%)",
+          muted: "hsl(345 30% 70%)",
+        },
+        // Gold - Accent (30% usage)
         gold: {
           DEFAULT: "hsl(42 90% 50%)",
           light: "hsl(45 85% 62%)",
-          dark: "hsl(38 95% 35%)",
+          dark: "hsl(38 95% 38%)",
         },
-        cream: "hsl(40 40% 92%)",
+        // Light Cream - Background
+        cream: {
+          DEFAULT: "hsl(40 35% 96%)",
+          dark: "hsl(40 25% 90%)",
+        },
+        // Dark text colors
         charcoal: {
-          DEFAULT: "hsl(25 15% 8%)",
-          light: "hsl(25 12% 12%)",
-        },
-        "spa-green": {
-          DEFAULT: "hsl(155 45% 32%)",
-          light: "hsl(155 40% 45%)",
-          dark: "hsl(155 50% 22%)",
+          DEFAULT: "hsl(25 30% 15%)",
+          light: "hsl(25 25% 25%)",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

@@ -7,14 +7,14 @@ import gallery14 from "@/assets/gallery/gallery-14.jpg";
 
 const SanctuarySection = () => {
   return (
-    <section className="py-28 bg-background dark-section-abstract relative overflow-hidden">
-      {/* Decorative gold accents */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+    <section className="py-28 bg-background cream-section-abstract relative overflow-hidden">
+      {/* Decorative rose accents */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/25 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/25 to-transparent" />
       
       {/* Floating decorative orbs */}
       <div className="absolute top-20 right-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 left-20 w-48 h-48 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-20 left-20 w-48 h-48 bg-accent/5 rounded-full blur-3xl" />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -76,7 +76,7 @@ const SanctuarySection = () => {
             </motion.div>
             
             <motion.h2 
-              className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
+              className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.3 }}
