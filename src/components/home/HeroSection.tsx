@@ -92,7 +92,7 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <Sparkles className="w-4 h-4 text-primary" />
-              <span className="text-sm text-primary font-medium tracking-wide">Premium Beauty & Wellness</span>
+              <span className="text-sm text-primary font-medium tracking-wide">Luxury Med Spa</span>
             </motion.div>
             
             <motion.h1 
@@ -101,9 +101,9 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.4 }}
             >
-              <span className="pink-gold-text-gradient">La Belle</span>
+              <span className="pink-gold-text-gradient">POSHBODY</span>
               <br />
-              <span className="text-foreground">Lounge & Spa</span>
+              <span className="text-foreground text-3xl md:text-4xl xl:text-5xl">Aesthetic & Med Spa</span>
             </motion.h1>
             
             <motion.p 
@@ -112,8 +112,8 @@ const HeroSection = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.7 }}
             >
-              Experience the art of relaxation and beauty enhancement. Where luxury meets wellness 
-              in the heart of Port Harcourt.
+              Looking for a luxury med spa to get your body snatched? Your skin glow? 
+              Or maximum relaxation and pampering? <span className="text-primary font-medium">THE BEST PLACE TO GO.</span>
             </motion.p>
 
             <motion.div 
@@ -139,13 +139,16 @@ const HeroSection = () => {
               </motion.div>
             </motion.div>
 
-            {/* Decorative rose line */}
+            {/* Location badge */}
             <motion.div 
-              className="w-24 h-px bg-gradient-to-r from-primary/60 to-transparent"
-              initial={{ scaleX: 0, originX: 0 }}
-              animate={{ scaleX: 1 }}
-              transition={{ duration: 1, delay: 1.2 }}
-            />
+              className="flex items-center gap-2 text-muted-foreground text-sm"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 1.1 }}
+            >
+              <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+              <span>Lagos • Abuja • Port Harcourt</span>
+            </motion.div>
           </div>
 
           {/* Right side - Image showcase */}
@@ -210,7 +213,7 @@ const HeroSection = () => {
                 <motion.img
                   key={index}
                   src={img}
-                  alt={`La Belle Spa experience ${index + 1}`}
+                  alt={`POSHBODY Spa experience ${index + 1}`}
                   className="absolute inset-0 w-full h-full object-cover"
                   initial={{ opacity: 0 }}
                   animate={{ 

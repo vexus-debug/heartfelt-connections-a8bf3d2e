@@ -16,13 +16,13 @@ const testimonials = [
   },
   {
     name: "Blessing N.",
-    text: "The hot stone massage was exactly what I needed. I left feeling like a completely new person. Thank you, La Belle!",
+    text: "The hot stone massage was exactly what I needed. I left feeling like a completely new person. Thank you, POSHBODY!",
     rating: 5,
     service: "Hot Stone Massage"
   },
   {
     name: "Ada M.",
-    text: "Finally found my go-to spa! The attention to detail and personalized care is unmatched in Port Harcourt.",
+    text: "Finally found my go-to med spa! The attention to detail and personalized care is unmatched. Truly the best place to go!",
     rating: 5,
     service: "Swedish Massage"
   },

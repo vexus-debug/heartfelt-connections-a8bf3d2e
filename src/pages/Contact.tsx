@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Phone, MapPin, Clock, Instagram, Facebook, MessageCircle, Mail } from "lucide-react";
+import { Phone, MapPin, Clock, Instagram, MessageCircle, Mail } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import hero5 from "@/assets/hero/hero-5.jpg";
@@ -29,10 +29,10 @@ const Contact = () => {
     e.preventDefault();
     
     // Create WhatsApp message
-    const message = `Hello La Belle Lounge & Spa!%0A%0AName: ${formData.name}%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0A%0AMessage: ${formData.message}`;
+    const message = `Hello POSHBODY Aesthetic and Med Spa!%0A%0AName: ${formData.name}%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0A%0AMessage: ${formData.message}`;
     
     // Open WhatsApp
-    window.open(`https://wa.me/2347071979153?text=${message}`, "_blank");
+    window.open(`https://wa.me/2347040241630?text=${message}`, "_blank");
     
     toast({
       title: "Redirecting to WhatsApp",
@@ -136,7 +136,7 @@ const Contact = () => {
                 <h3 className="font-serif text-xl font-bold mb-6 text-primary">Quick Contact</h3>
                 <div className="space-y-4">
                   <a
-                    href="tel:+2347071979153"
+                    href="tel:+2347040241630"
                     className="flex items-center gap-4 text-foreground hover:text-primary transition-colors"
                   >
                     <div className="w-12 h-12 rounded-full gold-gradient flex items-center justify-center flex-shrink-0">
@@ -144,12 +144,12 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-medium">Call Us</p>
-                      <p className="text-muted-foreground">+234 707 197 9153</p>
+                      <p className="text-muted-foreground text-sm">+234 704 024 1630 | +234 704 024 1649 | +234 706 655 9432</p>
                     </div>
                   </a>
 
                   <a
-                    href="https://wa.me/2347071979153"
+                    href="https://wa.me/2347040241630"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 text-foreground hover:text-primary transition-colors"
@@ -171,20 +171,12 @@ const Contact = () => {
                       <p className="font-medium">Follow Us</p>
                       <div className="flex gap-3 mt-1">
                         <a
-                          href="https://instagram.com"
+                          href="https://www.instagram.com/poshbodyng"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-muted-foreground hover:text-primary transition-colors"
                         >
                           <Instagram className="w-5 h-5" />
-                        </a>
-                        <a
-                          href="https://facebook.com"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-muted-foreground hover:text-primary transition-colors"
-                        >
-                          <Facebook className="w-5 h-5" />
                         </a>
                       </div>
                     </div>
@@ -193,15 +185,15 @@ const Contact = () => {
               </div>
 
               {/* Locations */}
-              <div className="space-y-6">
-                {/* New GRA Branch */}
-                <div className="p-6 rounded-2xl bg-card border border-primary/20">
-                  <div className="flex items-center gap-3 mb-4">
+              <div className="space-y-4">
+                {/* Lagos - Lekki */}
+                <div className="p-5 rounded-2xl bg-card border border-primary/20">
+                  <div className="flex items-center gap-3 mb-3">
                     <MapPin className="w-5 h-5 text-primary" />
-                    <h3 className="font-serif text-lg font-semibold">New GRA Branch</h3>
+                    <h3 className="font-serif text-lg font-semibold">Lagos - Lekki Office</h3>
                   </div>
-                  <div className="space-y-3 text-muted-foreground text-sm">
-                    <p>21 B, Obagi Street, New GRA, by Salvation Ministries HQ, Port Harcourt 500272, Rivers State</p>
+                  <div className="space-y-2 text-muted-foreground text-sm">
+                    <p>Marwa Mall, No 2, Adewunmi Adebimpe Drive, At Marwa Bustop By Providence Street, Lekki Phase I, Lagos</p>
                     <div className="flex items-center gap-2">
                       <Clock className="w-4 h-4 text-primary" />
                       <p>Mon - Sat: 9 AM - 7 PM | Closed Sundays</p>
@@ -209,29 +201,64 @@ const Contact = () => {
                   </div>
                 </div>
 
-                {/* Eneka Branch */}
-                <div className="p-6 rounded-2xl bg-card border border-primary/20">
-                  <div className="flex items-center gap-3 mb-4">
+                {/* Lagos - Mainland */}
+                <div className="p-5 rounded-2xl bg-card border border-primary/20">
+                  <div className="flex items-center gap-3 mb-3">
                     <MapPin className="w-5 h-5 text-primary" />
-                    <h3 className="font-serif text-lg font-semibold">Eneka Branch</h3>
+                    <h3 className="font-serif text-lg font-semibold">Lagos - Mainland Office</h3>
                   </div>
-                  <div className="space-y-3 text-muted-foreground text-sm">
-                    <p>Shop U8, By Pearl Garden, Nechka Shopping Complex, Eneka Link Rd, Port Harcourt 500102, Rivers State</p>
+                  <div className="space-y-2 text-muted-foreground text-sm">
+                    <p>No 28 Idowu Rufai, Ago palace, Okota, Lagos</p>
                     <div className="flex items-center gap-2">
                       <Clock className="w-4 h-4 text-primary" />
-                      <p>Open 24 Hours Daily</p>
+                      <p>Mon - Sat: 9 AM - 7 PM | Closed Sundays</p>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              {/* Banking Details */}
-              <div className="p-6 rounded-2xl bg-card border border-primary/20">
-                <h3 className="font-serif text-lg font-semibold mb-4 text-primary">Banking Details</h3>
-                <div className="space-y-2 text-sm">
-                  <p><span className="text-muted-foreground">Bank:</span> <span className="text-foreground">FCMB</span></p>
-                  <p><span className="text-muted-foreground">Account Number:</span> <span className="text-foreground">8754729010</span></p>
-                  <p><span className="text-muted-foreground">Account Name:</span> <span className="text-foreground">De-Labelle Lounge & Spa</span></p>
+                {/* Lagos - Chevron */}
+                <div className="p-5 rounded-2xl bg-card border border-primary/20">
+                  <div className="flex items-center gap-3 mb-3">
+                    <MapPin className="w-5 h-5 text-primary" />
+                    <h3 className="font-serif text-lg font-semibold">Lagos - Chevron Office</h3>
+                  </div>
+                  <div className="space-y-2 text-muted-foreground text-sm">
+                    <p>No.1 James Anyaeche street, Bera estate, Chevron drive, Lagos</p>
+                    <div className="flex items-center gap-2">
+                      <Clock className="w-4 h-4 text-primary" />
+                      <p>Mon - Sat: 9 AM - 7 PM | Closed Sundays</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Abuja */}
+                <div className="p-5 rounded-2xl bg-card border border-primary/20">
+                  <div className="flex items-center gap-3 mb-3">
+                    <MapPin className="w-5 h-5 text-primary" />
+                    <h3 className="font-serif text-lg font-semibold">Abuja Studio</h3>
+                  </div>
+                  <div className="space-y-2 text-muted-foreground text-sm">
+                    <p>Suite C12/13 Emmanuel Plaza, Opposite Daily Trust Newspaper, Utako, FCT Abuja</p>
+                    <div className="flex items-center gap-2">
+                      <Clock className="w-4 h-4 text-primary" />
+                      <p>Mon - Sat: 9 AM - 7 PM | Closed Sundays</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Port Harcourt */}
+                <div className="p-5 rounded-2xl bg-card border border-primary/20">
+                  <div className="flex items-center gap-3 mb-3">
+                    <MapPin className="w-5 h-5 text-primary" />
+                    <h3 className="font-serif text-lg font-semibold">Port Harcourt Office</h3>
+                  </div>
+                  <div className="space-y-2 text-muted-foreground text-sm">
+                    <p>No 37b Eileenwo Street, behind Skippers Fast Food, Opposite Bite Delight Fast Food, Port Harcourt</p>
+                    <div className="flex items-center gap-2">
+                      <Clock className="w-4 h-4 text-primary" />
+                      <p>Mon - Sat: 9 AM - 7 PM | Closed Sundays</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

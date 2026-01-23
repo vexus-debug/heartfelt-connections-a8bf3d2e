@@ -11,7 +11,6 @@ import gallery3 from "@/assets/gallery/gallery-3.jpg";
 import gallery4 from "@/assets/gallery/gallery-4.jpg";
 import gallery5 from "@/assets/gallery/gallery-5.jpg";
 import gallery6 from "@/assets/gallery/gallery-6.jpg";
-import gallery7 from "@/assets/gallery/gallery-7.jpg";
 
 const values = [
   {
@@ -63,10 +62,10 @@ const About = () => {
                 Welcome to
               </p>
               <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold animate-fade-in text-primary-foreground" style={{ animationDelay: '0.1s' }}>
-                About <span className="gold-text-gradient">La Belle</span>
+                About <span className="gold-text-gradient">POSHBODY</span>
               </h1>
               <p className="text-primary-foreground/85 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
-                Your premier destination for luxury beauty and wellness in Port Harcourt
+                Your premier destination for luxury medical spa services in Lagos, Abuja & Port Harcourt
               </p>
             </div>
           </div>
@@ -89,7 +88,7 @@ const About = () => {
               <div className="grid grid-cols-12 gap-4">
                 <div className="col-span-7 row-span-2">
                   <div className="relative group overflow-hidden rounded-3xl aspect-[3/4]">
-                    <img src={gallery1} alt="La Belle Spa Treatment" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+                    <img src={gallery1} alt="POSHBODY Spa Treatment" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
                   </div>
                 </div>
@@ -117,13 +116,13 @@ const About = () => {
                 </h2>
               </div>
               <div className="space-y-5 text-muted-foreground leading-relaxed text-lg">
-                <p>La Belle Lounge & Spa was founded with a singular vision: to create a sanctuary where luxury meets wellness.</p>
-                <p>Located in Port Harcourt with two branches – New GRA and Eneka – we are the go-to destination for premium beauty treatments.</p>
-                <p>Our team specializes in both invasive and non-invasive procedures, from facials and massages to advanced body sculpting.</p>
+                <p>POSHBODY Aesthetic and Med Spa was founded with a singular vision: to be THE BEST PLACE TO GO for luxury medical spa services.</p>
+                <p>With five locations across Lagos, Abuja, and Port Harcourt, we are the premier destination for those seeking to get their body snatched, their skin glow, or maximum relaxation and pampering.</p>
+                <p>Our team specializes in both invasive and non-invasive procedures, from facials and massages to advanced body sculpting and aesthetic treatments.</p>
               </div>
               <div className="grid grid-cols-3 gap-6 pt-6 border-t border-primary/15">
                 <div className="text-center">
-                  <p className="font-serif text-3xl md:text-4xl font-bold text-primary">2</p>
+                  <p className="font-serif text-3xl md:text-4xl font-bold text-primary">5</p>
                   <p className="text-muted-foreground text-sm mt-1">Locations</p>
                 </div>
                 <div className="text-center">
@@ -216,10 +215,10 @@ const About = () => {
             <div className="space-y-4">
               <p className="text-accent tracking-[0.2em] uppercase text-sm font-medium">Begin Your Journey</p>
               <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-cream">
-                Experience the <span className="gold-text-gradient">La Belle Difference</span>
+                Experience the <span className="gold-text-gradient">POSHBODY Difference</span>
               </h2>
             </div>
-            <p className="text-cream/80 text-lg md:text-xl leading-relaxed">Join our family and discover why La Belle Lounge & Spa is the preferred choice in Port Harcourt.</p>
+            <p className="text-cream/80 text-lg md:text-xl leading-relaxed">Join our family and discover why POSHBODY Aesthetic and Med Spa is THE BEST PLACE TO GO across Lagos, Abuja, and Port Harcourt.</p>
             <div className="flex flex-col sm:flex-row items-start gap-4 pt-4">
               <Button asChild size="lg" className="gold-gradient text-charcoal hover:opacity-90 rounded-full px-8 text-base font-semibold">
                 <Link to="/booking">Book Your Appointment</Link>
