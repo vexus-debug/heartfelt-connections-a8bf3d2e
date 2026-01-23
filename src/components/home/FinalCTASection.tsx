@@ -111,7 +111,7 @@ const FinalCTASection = () => {
               <Button 
                 asChild 
                 size="lg" 
-                className="gold-gradient text-charcoal hover:opacity-90 text-lg px-10 py-7 shadow-lg gold-glow-intense group font-semibold"
+                className="pink-gradient text-primary-foreground hover:opacity-90 text-lg px-10 py-7 shadow-lg pink-glow-intense group font-semibold"
               >
                 <a
                   href="https://wa.me/2347040241630?text=Hello%20POSHBODY%20Aesthetic%20and%20Med%20Spa%2C%20I%20would%20like%20to%20book%20an%20appointment."

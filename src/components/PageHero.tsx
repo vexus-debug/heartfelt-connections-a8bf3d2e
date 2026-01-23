@@ -32,9 +32,9 @@ const PageHero = ({
         />
       </motion.div>
       
-      {/* Gradient Overlays - rose tinted */}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/50 via-primary/40 to-background" />
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/30 via-transparent to-transparent" />
+      {/* Deep pink gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/70 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-r from-primary/50 via-primary/30 to-transparent" />
       
       {/* Decorative elements */}
       <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-primary-foreground/10 blur-3xl pointer-events-none" />
