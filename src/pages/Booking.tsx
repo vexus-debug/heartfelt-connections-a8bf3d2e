@@ -20,8 +20,11 @@ interface SelectedService {
 }
 
 const locationOptions = [
-  { value: "new-gra", label: "New GRA Branch (Mon-Sat: 9AM-7PM)" },
-  { value: "eneka", label: "Eneka Branch (24/7)" },
+  { value: "lagos-lekki", label: "Lagos - Lekki Office (Marwa Mall, Lekki Phase I)" },
+  { value: "lagos-mainland", label: "Lagos - Mainland Office (Okota)" },
+  { value: "lagos-chevron", label: "Lagos - Chevron Office (Bera Estate)" },
+  { value: "abuja", label: "Abuja Studio (Utako)" },
+  { value: "port-harcourt", label: "Port Harcourt Office (Eileenwo Street)" },
 ];
 
 const Booking = () => {
@@ -92,7 +95,7 @@ const Booking = () => {
 
     // Construct WhatsApp message
     const message = encodeURIComponent(
-      `Hello La Belle Lounge & Spa! I would like to book an appointment.\n\n` +
+      `Hello POSHBODY Aesthetic and Med Spa! I would like to book an appointment.\n\n` +
       `*Name:* ${formData.name}\n` +
       `*Phone:* ${formData.phone}\n\n` +
       `*Services:*\n${formatServicesForMessage()}\n\n` +
@@ -103,7 +106,7 @@ const Booking = () => {
     );
 
     // Open WhatsApp with pre-filled message
-    window.open(`https://wa.me/2347071979153?text=${message}`, "_blank");
+    window.open(`https://wa.me/2347040241630?text=${message}`, "_blank");
 
     toast({
       title: "Booking Request Prepared!",
@@ -312,14 +315,14 @@ const Booking = () => {
                 <h3 className="font-serif text-xl font-bold mb-6 text-primary">Need Help?</h3>
                 <div className="space-y-4">
                   <a
-                    href="tel:+2347071979153"
+                    href="tel:+2347040241630"
                     className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
                   >
                     <Phone className="w-5 h-5 text-primary" />
-                    <span>+234 707 197 9153</span>
+                    <span>+234 704 024 1630</span>
                   </a>
                   <a
-                    href="https://wa.me/2347071979153"
+                    href="https://wa.me/2347040241630"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
@@ -340,11 +343,11 @@ const Booking = () => {
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <p className="text-muted-foreground">Walk-ins welcome at Eneka (24/7)</p>
+                    <p className="text-muted-foreground">5 locations across Lagos, Abuja & Port Harcourt</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <p className="text-muted-foreground">Payment via cash or bank transfer</p>
+                    <p className="text-muted-foreground">Mon - Sat: 9 AM - 7 PM</p>
                   </div>
                 </div>
               </div>

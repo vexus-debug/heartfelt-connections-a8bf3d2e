@@ -27,7 +27,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center">
             <img 
               src={logo} 
-              alt="La Belle Lounge & Spa" 
+              alt="POSHBODY Aesthetic and Med Spa" 
               className="h-16 md:h-20 w-auto"
             />
           </Link>
@@ -52,15 +52,15 @@ const Navbar = () => {
           {/* Contact Button - Desktop */}
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href="tel:+2347071979153"
+              href="tel:+2347040241630"
               className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               <Phone className="w-4 h-4" />
-              +234 707 197 9153
+              +234 704 024 1630
             </a>
             <Button asChild className="gold-gradient text-charcoal hover:opacity-90 font-semibold">
               <a
-                href="https://wa.me/2347071979153?text=Hello%20La%20Belle%20Lounge%20%26%20Spa%2C%20I%20would%20like%20to%20book%20an%20appointment."
+                href="https://wa.me/2347040241630?text=Hello%20POSHBODY%20Aesthetic%20and%20Med%20Spa%2C%20I%20would%20like%20to%20book%20an%20appointment."
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -99,15 +99,15 @@ const Navbar = () => {
               ))}
               <div className="pt-4 border-t border-primary/15">
                 <a
-                  href="tel:+2347071979153"
+                  href="tel:+2347040241630"
                   className="flex items-center gap-2 text-muted-foreground mb-4"
                 >
                   <Phone className="w-4 h-4" />
-                  +234 707 197 9153
+                  +234 704 024 1630
                 </a>
                 <Button asChild className="w-full gold-gradient text-charcoal font-semibold">
                   <a
-                    href="https://wa.me/2347071979153?text=Hello%20La%20Belle%20Lounge%20%26%20Spa%2C%20I%20would%20like%20to%20book%20an%20appointment."
+                    href="https://wa.me/2347040241630?text=Hello%20POSHBODY%20Aesthetic%20and%20Med%20Spa%2C%20I%20would%20like%20to%20book%20an%20appointment."
                     target="_blank"
                     rel="noopener noreferrer"
                   >

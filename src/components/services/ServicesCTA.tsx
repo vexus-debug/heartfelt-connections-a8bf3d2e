@@ -59,7 +59,7 @@ const ServicesCTA = () => {
               className="border-primary/30 hover:bg-primary/10 hover:border-primary/50 text-lg px-8 py-6"
             >
               <a
-                href="https://wa.me/2347071979153?text=Hello%20La%20Belle%20Lounge%20%26%20Spa%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+                href="https://wa.me/2347040241630?text=Hello%20POSHBODY%20Aesthetic%20and%20Med%20Spa%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
                 target="_blank"
                 rel="noopener noreferrer"
               >

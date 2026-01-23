@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Facebook, CalendarCheck } from "lucide-react";
+import { Instagram, CalendarCheck } from "lucide-react";
 
 const FloatingButtons = () => {
   return (
@@ -7,22 +7,13 @@ const FloatingButtons = () => {
       {/* Social Media Buttons - Bottom Left */}
       <div className="fixed bottom-6 left-6 z-40 flex flex-col gap-3">
         <a
-          href="https://www.instagram.com/labelleng_spa"
+          href="https://www.instagram.com/poshbodyng"
           target="_blank"
           rel="noopener noreferrer"
           className="w-12 h-12 rounded-full rose-gradient flex items-center justify-center text-primary-foreground shadow-lg hover:scale-110 transition-transform duration-300"
           aria-label="Follow us on Instagram"
         >
           <Instagram className="w-5 h-5" />
-        </a>
-        <a
-          href="https://www.facebook.com/labelleng_spa"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-12 h-12 rounded-full rose-gradient flex items-center justify-center text-primary-foreground shadow-lg hover:scale-110 transition-transform duration-300"
-          aria-label="Follow us on Facebook"
-        >
-          <Facebook className="w-5 h-5" />
         </a>
       </div>
 

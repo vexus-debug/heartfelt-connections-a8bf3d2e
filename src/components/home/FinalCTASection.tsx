@@ -114,7 +114,7 @@ const FinalCTASection = () => {
                 className="gold-gradient text-charcoal hover:opacity-90 text-lg px-10 py-7 shadow-lg gold-glow-intense group font-semibold"
               >
                 <a
-                  href="https://wa.me/2347071979153?text=Hello%20La%20Belle%20Lounge%20%26%20Spa%2C%20I%20would%20like%20to%20book%20an%20appointment."
+                  href="https://wa.me/2347040241630?text=Hello%20POSHBODY%20Aesthetic%20and%20Med%20Spa%2C%20I%20would%20like%20to%20book%20an%20appointment."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3"
