@@ -86,7 +86,7 @@ const HeroSection = () => {
           {/* Left side - Content */}
           <div className="order-2 lg:order-1 space-y-5 lg:space-y-8 z-10">
             <motion.div 
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/5 backdrop-blur-sm"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl glass shadow-soft"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -122,16 +122,16 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.9 }}
             >
-              <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
-                <Button asChild size="lg" className="pink-gradient text-primary-foreground hover:opacity-90 text-sm md:text-base px-6 md:px-8 py-5 md:py-6 shadow-lg pink-glow font-semibold">
+              <motion.div whileHover={{ scale: 1.03, y: -2 }} whileTap={{ scale: 0.98 }}>
+                <Button asChild size="lg" className="rose-gradient text-primary-foreground hover:opacity-90 text-sm md:text-base px-6 md:px-8 py-5 md:py-6 shadow-float font-semibold rounded-xl btn-shine">
                   <Link to="/booking">
                     Book Your Experience
                     <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5" />
                   </Link>
                 </Button>
               </motion.div>
-              <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
-                <Button asChild variant="outline" size="lg" className="border-primary/40 text-primary hover:bg-primary hover:text-primary-foreground text-sm md:text-base px-6 md:px-8 py-5 md:py-6">
+              <motion.div whileHover={{ scale: 1.03, y: -2 }} whileTap={{ scale: 0.98 }}>
+                <Button asChild variant="outline" size="lg" className="glass border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground text-sm md:text-base px-6 md:px-8 py-5 md:py-6 rounded-xl shadow-soft">
                   <Link to="/services">
                     Explore Services
                   </Link>
@@ -202,7 +202,7 @@ const HeroSection = () => {
 
             {/* Main image container with parallax */}
             <motion.div 
-              className="relative w-full aspect-[3/4] max-w-md lg:max-w-lg overflow-hidden rounded-2xl shadow-2xl"
+              className="relative w-full aspect-[3/4] max-w-md lg:max-w-lg overflow-hidden rounded-2xl shadow-elevated"
               style={{ x: imageX, y: imageY }}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -276,7 +276,7 @@ const HeroSection = () => {
         transition={{ opacity: { delay: 1.5 }, y: { duration: 2, repeat: Infinity } }}
       >
         <span className="text-xs text-muted-foreground tracking-widest uppercase">Scroll</span>
-        <div className="w-5 h-9 rounded-full border border-primary/30 flex items-start justify-center p-1.5">
+        <div className="w-5 h-9 rounded-full glass border-primary/20 flex items-start justify-center p-1.5">
           <motion.div 
             className="w-1 h-1.5 bg-primary rounded-full"
             animate={{ y: [0, 16, 0] }}
