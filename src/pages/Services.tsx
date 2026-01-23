@@ -18,7 +18,6 @@ const Services = () => {
           key={index}
           icon={category.icon}
           title={category.title}
-          slug={category.slug}
           description={category.description}
           services={category.services}
           index={index}

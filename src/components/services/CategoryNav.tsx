@@ -1,4 +1,4 @@
-import { Zap, Sparkles, Syringe, Heart, Droplets, Star, ShoppingBag, LucideIcon } from "lucide-react";
+import { Heart, Sparkles, Zap, Droplets, Hand, Scissors, LucideIcon } from "lucide-react";
 
 interface Category {
   icon: LucideIcon;
@@ -7,13 +7,12 @@ interface Category {
 }
 
 const categories: Category[] = [
-  { icon: Zap, title: "Cavitation/Vacuum", slug: "cavitation-vacuum-therapies" },
-  { icon: Sparkles, title: "Spa Therapies", slug: "spa-therapies" },
-  { icon: Syringe, title: "Fat Dissolving", slug: "fat-dissolving-injections" },
-  { icon: Heart, title: "Facials", slug: "facials" },
-  { icon: Droplets, title: "IV Drips", slug: "iv-vitamin-drips" },
-  { icon: Star, title: "Body Enhancement", slug: "body-enhancement-injections" },
-  { icon: ShoppingBag, title: "Products", slug: "products-for-sale" },
+  { icon: Heart, title: "Massage & Spa", slug: "massage---spa" },
+  { icon: Sparkles, title: "Classic Facials", slug: "classic-facials" },
+  { icon: Zap, title: "Anti-Aging", slug: "anti-aging-facials" },
+  { icon: Droplets, title: "Acne Facials", slug: "acne-facials" },
+  { icon: Hand, title: "Pedi & Mani", slug: "pedicure---manicure" },
+  { icon: Scissors, title: "Waxing", slug: "waxing-services" },
 ];
 
 const CategoryNav = () => {
@@ -32,9 +31,9 @@ const CategoryNav = () => {
   };
 
   return (
-    <section className="sticky top-20 z-40 py-4 bg-background/80 backdrop-blur-lg border-b border-primary/10">
+    <section className="sticky top-0 z-40 py-4 bg-background/80 backdrop-blur-lg border-b border-primary/10">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-start lg:justify-center gap-2 overflow-x-auto pb-2 scrollbar-hide">
+        <div className="flex items-center justify-center gap-2 overflow-x-auto pb-2 scrollbar-hide">
           {categories.map((category) => (
             <button
               key={category.slug}

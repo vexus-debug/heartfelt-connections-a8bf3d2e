@@ -1,4 +1,4 @@
-import { Camera } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import {
@@ -12,7 +12,6 @@ interface ServiceAccordionItemProps {
   price: string;
   description?: string;
   duration?: string;
-  requiresPhoto?: boolean;
   index: number;
   categorySlug: string;
 }
@@ -22,10 +21,10 @@ const ServiceAccordionItem = ({
   price,
   description,
   duration,
-  requiresPhoto,
   index,
   categorySlug,
 }: ServiceAccordionItemProps) => {
+  const serviceSlug = name.toLowerCase().replace(/[^a-z0-9]+/g, "-");
   const bookingUrl = `/booking?service=${categorySlug}&treatment=${encodeURIComponent(name)}`;
 
   return (
@@ -37,17 +36,9 @@ const ServiceAccordionItem = ({
         <div className="flex items-center justify-between w-full pr-4">
           <div className="flex items-center gap-4">
             <div className="w-2 h-2 rounded-full bg-primary/50 group-hover:bg-primary transition-colors duration-300" />
-            <div className="flex items-center gap-3">
-              <span className="font-medium text-foreground text-left text-lg">
-                {name}
-              </span>
-              {requiresPhoto && (
-                <span className="photo-required-badge">
-                  <Camera className="w-3 h-3" />
-                  Send pics
-                </span>
-              )}
-            </div>
+            <span className="font-medium text-foreground text-left text-lg">
+              {name}
+            </span>
           </div>
           <span className="text-primary font-semibold text-lg whitespace-nowrap">
             {price}
@@ -70,13 +61,11 @@ const ServiceAccordionItem = ({
               <span className="text-primary">Duration:</span> {duration}
             </p>
           )}
-
-          {requiresPhoto && (
-            <p className="text-sm text-accent flex items-center gap-2">
-              <Camera className="w-4 h-4" />
-              Please send photos via WhatsApp before booking this treatment
-            </p>
-          )}
+          
+          <p className="text-muted-foreground leading-relaxed text-sm italic">
+            Experience the ultimate in relaxation and rejuvenation with this luxurious treatment, 
+            performed by our skilled therapists using premium products.
+          </p>
 
           <Button
             asChild

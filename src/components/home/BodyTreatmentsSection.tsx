@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import gallery5 from "@/assets/gallery/gallery-5.jpg";
 
 const treatments = [
-  { name: "Vacuum Butt Lift", icon: "✨" },
-  { name: "Lipocavitation", icon: "🎯" },
-  { name: "Waist Sculpting", icon: "💫" },
-  { name: "Tummy Tightening", icon: "⚡" },
+  { name: "Body Sculpting", icon: "✨" },
+  { name: "Cavitation", icon: "🎯" },
+  { name: "Lymphatic Drainage", icon: "💫" },
+  { name: "Fat Dissolving", icon: "⚡" },
 ];
 
 const BodyTreatmentsSection = () => {
