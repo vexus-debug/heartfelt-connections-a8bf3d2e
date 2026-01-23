@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import gallery7 from "@/assets/gallery/gallery-7.jpg";
-import gallery14 from "@/assets/gallery/gallery-14.jpg";
+import sanctuary1 from "@/assets/stock/sanctuary-1.jpg";
+import sanctuary2 from "@/assets/stock/sanctuary-2.jpg";
 
 const SanctuarySection = () => {
   return (
@@ -25,30 +25,30 @@ const SanctuarySection = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true, margin: "-100px" }}
           >
-            <motion.div 
-              className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl image-frame"
-              initial={{ opacity: 0, y: 60 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              <motion.img 
-                src={gallery7} 
+              <motion.div 
+                className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl image-frame"
+                initial={{ opacity: 0, y: 60 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
+                <motion.img 
+                  src={sanctuary1}
                 alt="Spa interior" 
                 className="w-full h-full object-cover"
                 whileHover={{ scale: 1.08 }}
                 transition={{ duration: 0.5 }}
               />
             </motion.div>
-            <motion.div 
-              className="aspect-[3/4] rounded-3xl overflow-hidden mt-12 shadow-2xl image-frame"
-              initial={{ opacity: 0, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              viewport={{ once: true }}
-            >
-              <motion.img 
-                src={gallery14} 
+              <motion.div 
+                className="aspect-[3/4] rounded-3xl overflow-hidden mt-12 shadow-2xl image-frame"
+                initial={{ opacity: 0, y: 80 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+              >
+                <motion.img 
+                  src={sanctuary2}
                 alt="Relaxation area" 
                 className="w-full h-full object-cover"
                 whileHover={{ scale: 1.08 }}

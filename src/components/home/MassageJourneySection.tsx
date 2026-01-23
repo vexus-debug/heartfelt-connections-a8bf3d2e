@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import gallery15 from "@/assets/gallery/gallery-15.jpg";
+import bodySculpting from "@/assets/stock/body-sculpting.jpg";
 
 const treatmentHighlights = [
   { name: "Lipocavitation/Tummy Blast", description: "Ultrasonic fat destruction for a flatter tummy" },
@@ -118,7 +118,7 @@ const MassageJourneySection = () => {
           >
             <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
               <motion.img 
-                src={gallery15} 
+                src={bodySculpting} 
                 alt="Body sculpting treatment" 
                 className="w-full h-full object-cover"
                 whileHover={{ scale: 1.05 }}
