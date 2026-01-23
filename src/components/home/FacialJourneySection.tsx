@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import gallery1 from "@/assets/gallery/gallery-1.jpg";
-import gallery12 from "@/assets/gallery/gallery-12.jpg";
-import gallery17 from "@/assets/gallery/gallery-17.jpg";
+import facialMetalTool from "@/assets/gallery/facial-metal-tool.jpg";
+import faceMask from "@/assets/gallery/face-mask.jpg";
+import facialDevice from "@/assets/gallery/facial-device.jpg";
 
 const facialTags = ["Hydra Facials", "Chemical Peel", "Vampire MicroNeedling", "Brightening Facials"];
 
@@ -45,8 +45,8 @@ const FacialJourneySection = () => {
                 viewport={{ once: true }}
               >
                 <motion.img 
-                  src={gallery1} 
-                  alt="Facial treatment" 
+                  src={facialMetalTool} 
+                  alt="Facial treatment"
                   className="w-full h-full object-cover"
                   whileHover={{ scale: 1.08 }}
                   transition={{ duration: 0.5 }}
@@ -60,8 +60,8 @@ const FacialJourneySection = () => {
                 viewport={{ once: true }}
               >
                 <motion.img 
-                  src={gallery17} 
-                  alt="Skincare treatment" 
+                  src={faceMask} 
+                  alt="Skincare treatment"
                   className="w-full h-full object-cover"
                   whileHover={{ scale: 1.08 }}
                   transition={{ duration: 0.5 }}
@@ -77,8 +77,8 @@ const FacialJourneySection = () => {
             >
               <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
                 <motion.img 
-                  src={gallery12} 
-                  alt="Glow facial" 
+                  src={facialDevice} 
+                  alt="Glow facial"
                   className="w-full h-full object-cover"
                   whileHover={{ scale: 1.08 }}
                   transition={{ duration: 0.5 }}
