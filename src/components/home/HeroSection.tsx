@@ -101,7 +101,7 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.4 }}
             >
-              <span className="rose-gold-text-gradient">La Belle</span>
+              <span className="pink-gold-text-gradient">La Belle</span>
               <br />
               <span className="text-foreground">Lounge & Spa</span>
             </motion.h1>

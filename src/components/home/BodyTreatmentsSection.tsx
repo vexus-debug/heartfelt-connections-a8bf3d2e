@@ -13,23 +13,23 @@ const treatments = [
 
 const BodyTreatmentsSection = () => {
   return (
-    <section className="py-28 gold-gradient-burnished gold-section-circles relative overflow-hidden">
+    <section className="py-28 pink-gradient-vibrant pink-section-circles relative overflow-hidden">
       {/* Decorative patterns */}
-      <div className="absolute inset-0 opacity-[0.03]">
+      <div className="absolute inset-0 opacity-[0.04]">
         <div className="absolute inset-0" style={{
           backgroundImage: `repeating-linear-gradient(
             45deg,
             transparent,
             transparent 2px,
-            rgba(255,255,255,0.1) 2px,
-            rgba(255,255,255,0.1) 4px
+            rgba(255,255,255,0.15) 2px,
+            rgba(255,255,255,0.15) 4px
           )`
         }} />
       </div>
       
-      {/* Corner decorations */}
-      <div className="absolute top-12 right-12 w-20 h-20 border-r-2 border-t-2 border-primary-foreground/15 rounded-tr-3xl" />
-      <div className="absolute bottom-12 left-12 w-20 h-20 border-l-2 border-b-2 border-primary-foreground/15 rounded-bl-3xl" />
+      {/* Corner decorations - gold accent */}
+      <div className="absolute top-12 right-12 w-20 h-20 border-r-2 border-t-2 border-accent/30 rounded-tr-3xl" />
+      <div className="absolute bottom-12 left-12 w-20 h-20 border-l-2 border-b-2 border-accent/30 rounded-bl-3xl" />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
@@ -51,14 +51,14 @@ const BodyTreatmentsSection = () => {
                 />
               </div>
               
-              {/* Decorative elements */}
+              {/* Decorative elements - gold accent */}
               <motion.div 
-                className="absolute -bottom-6 -right-6 w-36 h-36 border-2 border-primary-foreground/20 rounded-3xl"
+                className="absolute -bottom-6 -right-6 w-36 h-36 border-2 border-accent/40 rounded-3xl"
                 animate={{ rotate: [0, -3, 0, 3, 0] }}
                 transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
               />
               <motion.div 
-                className="absolute -top-4 -left-4 w-24 h-24 border border-primary-foreground/15 rounded-2xl"
+                className="absolute -top-4 -left-4 w-24 h-24 border border-white/25 rounded-2xl"
                 animate={{ scale: [1, 1.08, 1] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
               />
@@ -73,7 +73,7 @@ const BodyTreatmentsSection = () => {
             >
               <div>
                 <motion.span 
-                  className="text-primary-foreground/70 uppercase tracking-[0.3em] text-sm font-medium"
+                  className="text-white/80 uppercase tracking-[0.3em] text-sm font-medium"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
@@ -82,7 +82,7 @@ const BodyTreatmentsSection = () => {
                   Shape Your Confidence
                 </motion.span>
                 <motion.h2 
-                  className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mt-4"
+                  className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mt-4"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.3 }}
@@ -93,7 +93,7 @@ const BodyTreatmentsSection = () => {
               </div>
               
               <motion.p 
-                className="text-primary-foreground/90 text-lg md:text-xl leading-relaxed"
+                className="text-white/90 text-lg md:text-xl leading-relaxed"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
@@ -113,7 +113,7 @@ const BodyTreatmentsSection = () => {
                 {treatments.map((treatment, index) => (
                   <motion.div 
                     key={index}
-                    className="p-5 rounded-2xl bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/10 text-center hover:bg-primary-foreground/15 transition-all duration-300"
+                    className="p-5 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/15 text-center hover:bg-white/15 transition-all duration-300"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
@@ -127,7 +127,7 @@ const BodyTreatmentsSection = () => {
                     >
                       {treatment.icon}
                     </motion.span>
-                    <span className="text-primary-foreground font-medium">
+                    <span className="text-white font-medium">
                       {treatment.name}
                     </span>
                   </motion.div>
@@ -143,7 +143,7 @@ const BodyTreatmentsSection = () => {
                 <Button 
                   asChild 
                   size="lg"
-                  className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 shadow-lg hover:shadow-xl transition-all duration-300 group"
+                  className="gold-gradient text-charcoal hover:opacity-90 shadow-lg hover:shadow-xl transition-all duration-300 group gold-glow"
                 >
                   <Link to="/services" className="flex items-center gap-3">
                     Explore Body Treatments

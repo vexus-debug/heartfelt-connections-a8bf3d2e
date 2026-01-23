@@ -24,21 +24,21 @@ const locations = [
 
 const LocationsSection = () => {
   return (
-    <section className="py-28 rose-gradient-soft rose-section-organic relative overflow-hidden">
+    <section className="py-28 pink-gradient-organic pink-section-organic relative overflow-hidden">
       {/* Decorative map-like lines */}
-      <div className="absolute inset-0 opacity-[0.04]">
+      <div className="absolute inset-0 opacity-[0.06]">
         <svg width="100%" height="100%" className="absolute inset-0">
           <pattern id="map-pattern" width="100" height="100" patternUnits="userSpaceOnUse">
-            <path d="M0 50 Q 25 25, 50 50 T 100 50" stroke="currentColor" strokeWidth="0.5" fill="none" className="text-primary-foreground"/>
-            <circle cx="50" cy="50" r="2" fill="currentColor" className="text-primary-foreground"/>
+            <path d="M0 50 Q 25 25, 50 50 T 100 50" stroke="currentColor" strokeWidth="0.5" fill="none" className="text-white"/>
+            <circle cx="50" cy="50" r="2" fill="currentColor" className="text-white"/>
           </pattern>
           <rect width="100%" height="100%" fill="url(#map-pattern)"/>
         </svg>
       </div>
       
-      {/* Radial glow effects */}
-      <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-primary-foreground/8 rounded-full blur-3xl -translate-y-1/2" />
-      <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-primary-foreground/8 rounded-full blur-3xl -translate-y-1/2" />
+      {/* Radial glow effects - gold accent */}
+      <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-accent/15 rounded-full blur-3xl -translate-y-1/2" />
+      <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl -translate-y-1/2" />
       
       <div className="container mx-auto px-4 relative z-10">
         <motion.div 
@@ -49,7 +49,7 @@ const LocationsSection = () => {
           viewport={{ once: true, margin: "-100px" }}
         >
           <motion.span 
-            className="text-primary-foreground/75 uppercase tracking-[0.3em] text-sm font-medium"
+            className="text-white/80 uppercase tracking-[0.3em] text-sm font-medium"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -58,7 +58,7 @@ const LocationsSection = () => {
             Visit Us Today
           </motion.span>
           <motion.h2 
-            className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mt-4 mb-6"
+            className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mt-4 mb-6"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
@@ -67,7 +67,7 @@ const LocationsSection = () => {
             Find Your Nearest Sanctuary
           </motion.h2>
           <motion.p 
-            className="text-primary-foreground/85 text-lg md:text-xl max-w-2xl mx-auto"
+            className="text-white/85 text-lg md:text-xl max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -82,7 +82,7 @@ const LocationsSection = () => {
           {locations.map((location, index) => (
             <motion.div 
               key={index}
-              className="p-8 rounded-3xl bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/15 hover:border-primary-foreground/30 transition-all duration-500 group"
+              className="p-8 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20 hover:border-accent/40 transition-all duration-500 group relative"
               initial={{ opacity: 0, x: index === 0 ? -50 : 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.3 + index * 0.2 }}
@@ -91,50 +91,50 @@ const LocationsSection = () => {
             >
               <div className="flex items-center gap-4 mb-8">
                 <motion.div 
-                  className="w-14 h-14 rounded-2xl bg-primary-foreground flex items-center justify-center shadow-lg"
+                  className="w-14 h-14 rounded-2xl gold-gradient flex items-center justify-center shadow-lg"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <MapPin className="w-7 h-7 text-primary" />
+                  <MapPin className="w-7 h-7 text-charcoal" />
                 </motion.div>
                 <div>
-                  <h3 className="font-serif text-2xl font-bold text-primary-foreground">
+                  <h3 className="font-serif text-2xl font-bold text-white">
                     {location.name}
                   </h3>
-                  <span className="text-primary-foreground/65 text-sm font-medium uppercase tracking-wider">
+                  <span className="text-accent text-sm font-medium uppercase tracking-wider">
                     {location.tag}
                   </span>
                 </div>
               </div>
               
-              <div className="space-y-5 text-primary-foreground/90">
+              <div className="space-y-5 text-white/90">
                 <motion.div 
-                  className="flex items-start gap-4 p-4 rounded-xl bg-primary-foreground/5 group-hover:bg-primary-foreground/10 transition-colors duration-300"
+                  className="flex items-start gap-4 p-4 rounded-xl bg-white/5 group-hover:bg-white/10 transition-colors duration-300"
                   whileHover={{ x: 5 }}
                 >
-                  <MapPin className="w-5 h-5 text-primary-foreground/70 mt-0.5 flex-shrink-0" />
+                  <MapPin className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
                   <span className="leading-relaxed">{location.address}</span>
                 </motion.div>
                 
                 <motion.div 
-                  className="flex items-center gap-4 p-4 rounded-xl bg-primary-foreground/5 group-hover:bg-primary-foreground/10 transition-colors duration-300"
+                  className="flex items-center gap-4 p-4 rounded-xl bg-white/5 group-hover:bg-white/10 transition-colors duration-300"
                   whileHover={{ x: 5 }}
                 >
-                  <Clock className="w-5 h-5 text-primary-foreground/70 flex-shrink-0" />
-                  <span>{location.hours} <span className="text-primary-foreground/55">• {location.note}</span></span>
+                  <Clock className="w-5 h-5 text-accent flex-shrink-0" />
+                  <span>{location.hours} <span className="text-white/60">• {location.note}</span></span>
                 </motion.div>
                 
                 <motion.div 
-                  className="flex items-center gap-4 p-4 rounded-xl bg-primary-foreground/5 group-hover:bg-primary-foreground/10 transition-colors duration-300"
+                  className="flex items-center gap-4 p-4 rounded-xl bg-white/5 group-hover:bg-white/10 transition-colors duration-300"
                   whileHover={{ x: 5 }}
                 >
-                  <Phone className="w-5 h-5 text-primary-foreground/70 flex-shrink-0" />
+                  <Phone className="w-5 h-5 text-accent flex-shrink-0" />
                   <span className="font-medium">{location.phone}</span>
                 </motion.div>
               </div>
               
-              {/* Decorative corner */}
-              <div className="absolute top-4 right-4 w-10 h-10 border-r-2 border-t-2 border-primary-foreground/15 rounded-tr-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              {/* Decorative corner - gold accent */}
+              <div className="absolute top-4 right-4 w-10 h-10 border-r-2 border-t-2 border-accent/30 rounded-tr-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </motion.div>
           ))}
         </div>
@@ -149,7 +149,7 @@ const LocationsSection = () => {
           <Button 
             asChild 
             size="lg"
-            className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 shadow-lg hover:shadow-xl transition-all duration-300 group"
+            className="gold-gradient text-charcoal hover:opacity-90 shadow-lg hover:shadow-xl transition-all duration-300 group gold-glow"
           >
             <Link to="/contact" className="flex items-center gap-3">
               Get Directions & Contact

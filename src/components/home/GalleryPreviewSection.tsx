@@ -20,13 +20,13 @@ const galleryImages = [
 
 const GalleryPreviewSection = () => {
   return (
-    <section className="py-28 gold-gradient-amber gold-section-artdeco relative overflow-hidden">
+    <section className="py-28 pink-gradient-soft pink-section-artdeco relative overflow-hidden">
       {/* Decorative diagonal lines */}
-      <div className="absolute inset-0 overflow-hidden opacity-[0.04]">
+      <div className="absolute inset-0 overflow-hidden opacity-[0.06]">
         {[...Array(20)].map((_, i) => (
           <div 
             key={i}
-            className="absolute h-px bg-charcoal/50 w-[200%] -left-1/2"
+            className="absolute h-px bg-white/50 w-[200%] -left-1/2"
             style={{
               top: `${i * 5}%`,
               transform: 'rotate(-15deg)',
@@ -35,11 +35,11 @@ const GalleryPreviewSection = () => {
         ))}
       </div>
       
-      {/* Corner ornaments */}
-      <div className="absolute top-8 left-8 w-16 h-16 border-l-2 border-t-2 border-charcoal/15 rounded-tl-2xl" />
-      <div className="absolute top-8 right-8 w-16 h-16 border-r-2 border-t-2 border-charcoal/15 rounded-tr-2xl" />
-      <div className="absolute bottom-8 left-8 w-16 h-16 border-l-2 border-b-2 border-charcoal/15 rounded-bl-2xl" />
-      <div className="absolute bottom-8 right-8 w-16 h-16 border-r-2 border-b-2 border-charcoal/15 rounded-br-2xl" />
+      {/* Corner ornaments - gold accent */}
+      <div className="absolute top-8 left-8 w-16 h-16 border-l-2 border-t-2 border-accent/30 rounded-tl-2xl" />
+      <div className="absolute top-8 right-8 w-16 h-16 border-r-2 border-t-2 border-accent/30 rounded-tr-2xl" />
+      <div className="absolute bottom-8 left-8 w-16 h-16 border-l-2 border-b-2 border-accent/30 rounded-bl-2xl" />
+      <div className="absolute bottom-8 right-8 w-16 h-16 border-r-2 border-b-2 border-accent/30 rounded-br-2xl" />
       
       <div className="container mx-auto px-4 relative z-10">
         <motion.div 
@@ -50,7 +50,7 @@ const GalleryPreviewSection = () => {
           viewport={{ once: true, margin: "-100px" }}
         >
           <motion.span 
-            className="text-charcoal/70 uppercase tracking-[0.3em] text-sm font-medium"
+            className="text-white/80 uppercase tracking-[0.3em] text-sm font-medium"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -59,7 +59,7 @@ const GalleryPreviewSection = () => {
             ✦ Moments of Bliss ✦
           </motion.span>
           <motion.h2 
-            className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-charcoal mt-4 mb-6"
+            className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mt-4 mb-6"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
@@ -68,7 +68,7 @@ const GalleryPreviewSection = () => {
             See the Magic Yourself
           </motion.h2>
           <motion.p 
-            className="text-charcoal/80 text-lg md:text-xl max-w-2xl mx-auto"
+            className="text-white/85 text-lg md:text-xl max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -99,15 +99,15 @@ const GalleryPreviewSection = () => {
               />
               
               {/* Hover overlay */}
-              <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-colors duration-500" />
+              <div className="absolute inset-0 bg-white/0 group-hover:bg-white/20 transition-colors duration-500" />
               
               {/* Border on hover */}
               <motion.div 
-                className="absolute inset-2 border-2 border-charcoal/0 group-hover:border-charcoal/30 rounded-xl transition-all duration-500"
+                className="absolute inset-2 border-2 border-white/0 group-hover:border-white/40 rounded-xl transition-all duration-500"
               />
               
-              {/* Corner accent */}
-              <div className="absolute bottom-3 right-3 w-8 h-8 border-r-2 border-b-2 border-charcoal/0 group-hover:border-charcoal/50 rounded-br-lg transition-all duration-500" />
+              {/* Corner accent - gold */}
+              <div className="absolute bottom-3 right-3 w-8 h-8 border-r-2 border-b-2 border-accent/0 group-hover:border-accent/60 rounded-br-lg transition-all duration-500" />
             </motion.div>
           ))}
         </div>
@@ -122,7 +122,7 @@ const GalleryPreviewSection = () => {
           <Button 
             asChild 
             size="lg"
-            className="bg-charcoal text-cream hover:bg-charcoal/90 shadow-lg hover:shadow-xl transition-all duration-300 group"
+            className="gold-gradient text-charcoal hover:opacity-90 shadow-lg hover:shadow-xl transition-all duration-300 group gold-glow"
           >
             <Link to="/gallery" className="flex items-center gap-3">
               Explore Our Gallery
