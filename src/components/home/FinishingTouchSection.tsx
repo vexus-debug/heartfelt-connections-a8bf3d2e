@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import ivDrip from "@/assets/stock/iv-drip.jpg";
-import spaMassage from "@/assets/stock/spa-massage.jpg";
-import fatDissolving from "@/assets/stock/fat-dissolving.jpg";
+import gallery2 from "@/assets/gallery/gallery-2.jpg";
+import gallery6 from "@/assets/gallery/gallery-6.jpg";
+import gallery8 from "@/assets/gallery/gallery-8.jpg";
 
 const services = [
-  { image: ivDrip, title: "IV Vitamin Drips", description: "Boost your wellness from within" },
-  { image: spaMassage, title: "Spa Therapies", description: "Luxurious pampering treatments" },
-  { image: fatDissolving, title: "Fat Dissolving", description: "Target stubborn fat deposits" },
+  { image: gallery2, title: "IV Vitamin Drips", description: "Boost your wellness from within" },
+  { image: gallery6, title: "Spa Therapies", description: "Luxurious pampering treatments" },
+  { image: gallery8, title: "Fat Dissolving", description: "Target stubborn fat deposits" },
 ];
 
 const FinishingTouchSection = () => {

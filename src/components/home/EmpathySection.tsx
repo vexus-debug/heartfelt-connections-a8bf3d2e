@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import empathySpa from "@/assets/stock/empathy-spa.jpg";
+import gallery10 from "@/assets/gallery/gallery-10.jpg";
 
 const EmpathySection = () => {
   return (
@@ -73,7 +73,7 @@ const EmpathySection = () => {
           >
             <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl image-frame">
               <motion.img 
-                src={empathySpa} 
+                src={gallery10} 
                 alt="Peaceful spa ambiance" 
                 className="w-full h-full object-cover"
                 whileHover={{ scale: 1.05 }}

@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import facial1 from "@/assets/stock/facial-1.jpg";
-import facial2 from "@/assets/stock/facial-2.jpg";
-import facial3 from "@/assets/stock/facial-3.jpg";
+import gallery1 from "@/assets/gallery/gallery-1.jpg";
+import gallery12 from "@/assets/gallery/gallery-12.jpg";
+import gallery17 from "@/assets/gallery/gallery-17.jpg";
 
 const facialTags = ["Hydra Facials", "Chemical Peel", "Vampire MicroNeedling", "Brightening Facials"];
 
@@ -45,7 +45,7 @@ const FacialJourneySection = () => {
                 viewport={{ once: true }}
               >
                 <motion.img 
-                  src={facial1} 
+                  src={gallery1} 
                   alt="Facial treatment" 
                   className="w-full h-full object-cover"
                   whileHover={{ scale: 1.08 }}
@@ -60,7 +60,7 @@ const FacialJourneySection = () => {
                 viewport={{ once: true }}
               >
                 <motion.img 
-                  src={facial2} 
+                  src={gallery17} 
                   alt="Skincare treatment" 
                   className="w-full h-full object-cover"
                   whileHover={{ scale: 1.08 }}
@@ -77,7 +77,7 @@ const FacialJourneySection = () => {
             >
               <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
                 <motion.img 
-                  src={facial3} 
+                  src={gallery12} 
                   alt="Glow facial" 
                   className="w-full h-full object-cover"
                   whileHover={{ scale: 1.08 }}
