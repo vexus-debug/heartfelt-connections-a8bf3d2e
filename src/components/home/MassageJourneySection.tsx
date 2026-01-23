@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import gallery15 from "@/assets/gallery/gallery-15.jpg";
 
 const massageHighlights = [
-  { name: "Swedish Massage", description: "Gentle strokes for deep relaxation" },
-  { name: "Deep Tissue Therapy", description: "Target those stubborn knots" },
-  { name: "Hot Stone Experience", description: "Warm stones melt tension away" },
+  { name: "Moroccan Hammam Bath", description: "Traditional deep cleansing ritual" },
+  { name: "Body Polishing", description: "Full body exfoliation for silky skin" },
+  { name: "IV Vitamin Drips", description: "Nourishment from within" },
 ];
 
 const MassageJourneySection = () => {
@@ -55,7 +55,7 @@ const MassageJourneySection = () => {
                 transition={{ duration: 0.7, delay: 0.3 }}
                 viewport={{ once: true }}
               >
-                Let Skilled Hands Melt Away Your Tension
+                Experience Ultimate Relaxation & Wellness
               </motion.h2>
             </div>
             
@@ -102,7 +102,7 @@ const MassageJourneySection = () => {
                 className="gold-gradient text-charcoal hover:opacity-90 shadow-lg hover:shadow-xl transition-all duration-300 group gold-glow"
               >
                 <Link to="/services" className="flex items-center gap-3">
-                  Explore Massage & Spa
+                  Explore Spa Therapies
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>

@@ -7,11 +7,13 @@ interface Service {
   price: string;
   description?: string;
   duration?: string;
+  requiresPhoto?: boolean;
 }
 
 interface ServiceCategoryProps {
   icon: LucideIcon;
   title: string;
+  slug: string;
   description: string;
   services: Service[];
   index: number;
@@ -21,17 +23,15 @@ interface ServiceCategoryProps {
 const ServiceCategory = ({
   icon: Icon,
   title,
+  slug,
   description,
   services,
   index,
   isAlternate = false,
 }: ServiceCategoryProps) => {
-  const categorySlug = title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-  const sectionId = categorySlug;
-
   return (
     <section
-      id={sectionId}
+      id={slug}
       className={`py-20 ${isAlternate ? "bg-card" : "bg-background"} relative overflow-hidden`}
     >
       {/* Subtle decorative background pattern */}
@@ -79,8 +79,9 @@ const ServiceCategory = ({
                   price={service.price}
                   description={service.description}
                   duration={service.duration}
+                  requiresPhoto={service.requiresPhoto}
                   index={serviceIndex}
-                  categorySlug={categorySlug}
+                  categorySlug={slug}
                 />
               ))}
             </Accordion>
