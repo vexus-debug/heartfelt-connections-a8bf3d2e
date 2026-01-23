@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import gallery5 from "@/assets/gallery/gallery-5.jpg";
+import bodyEnhancement from "@/assets/stock/body-enhancement.jpg";
 
 const treatments = [
   { name: "PDO Thread Lift", icon: "✨" },
@@ -43,7 +43,7 @@ const BodyTreatmentsSection = () => {
             >
               <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
                 <motion.img 
-                  src={gallery5} 
+                  src={bodyEnhancement} 
                   alt="Body enhancement treatment" 
                   className="w-full h-full object-cover"
                   whileHover={{ scale: 1.05 }}
