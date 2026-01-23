@@ -8,7 +8,6 @@ import MassageJourneySection from "@/components/home/MassageJourneySection";
 import FacialJourneySection from "@/components/home/FacialJourneySection";
 import BodyTreatmentsSection from "@/components/home/BodyTreatmentsSection";
 import FinishingTouchSection from "@/components/home/FinishingTouchSection";
-import GalleryPreviewSection from "@/components/home/GalleryPreviewSection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
 import LocationsSection from "@/components/home/LocationsSection";
 import FinalCTASection from "@/components/home/FinalCTASection";
@@ -37,8 +36,6 @@ const Index = () => {
       {/* Journey Section 6: Finishing Touch - Black Background */}
       <FinishingTouchSection />
 
-      {/* Journey Section 7: Gallery Preview - Gold Background */}
-      <GalleryPreviewSection />
 
       {/* Journey Section 8: Testimonials - Black Background */}
       <TestimonialsSection />
