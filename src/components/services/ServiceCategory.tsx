@@ -70,7 +70,7 @@ const ServiceCategory = ({
           </div>
 
           {/* Services Accordion */}
-          <div className="bg-card/80 backdrop-blur-sm rounded-2xl border border-primary/15 overflow-hidden shadow-sm">
+          <div className="glass-strong rounded-2xl shadow-medium overflow-hidden">
             <Accordion type="single" collapsible className="w-full">
               {services.map((service, serviceIndex) => (
                 <ServiceAccordionItem

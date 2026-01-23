@@ -30,9 +30,9 @@ const ServiceAccordionItem = ({
   return (
     <AccordionItem
       value={`${categorySlug}-${index}`}
-      className="border-b border-primary/10 last:border-b-0 group"
+      className="border-b border-primary/8 last:border-b-0 group"
     >
-      <AccordionTrigger className="py-6 px-4 hover:no-underline hover:bg-primary/5 transition-all duration-300 rounded-lg">
+      <AccordionTrigger className="py-6 px-5 hover:no-underline hover:bg-primary/5 transition-all duration-300 rounded-xl mx-1">
         <div className="flex items-center justify-between w-full pr-4">
           <div className="flex items-center gap-4">
             <div className="w-2 h-2 rounded-full bg-primary/50 group-hover:bg-primary transition-colors duration-300" />
@@ -69,7 +69,7 @@ const ServiceAccordionItem = ({
 
           <Button
             asChild
-            className="gold-gradient text-primary-foreground hover:opacity-90 mt-4"
+            className="rose-gradient text-primary-foreground hover:opacity-90 mt-4 shadow-soft hover-lift btn-shine rounded-xl"
           >
             <Link to={bookingUrl}>
               Book This Treatment

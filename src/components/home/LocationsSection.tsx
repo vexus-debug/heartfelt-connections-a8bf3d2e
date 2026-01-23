@@ -106,16 +106,16 @@ const LocationsSection = () => {
           {locations.map((location, index) => (
             <motion.div 
               key={index}
-              className="p-6 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20 hover:border-accent/40 transition-all duration-500 group relative"
+              className="p-6 rounded-2xl glass-dark shadow-medium group relative"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 + index * 0.1 }}
               viewport={{ once: true, margin: "-50px" }}
-              whileHover={{ y: -8, boxShadow: "0 20px 60px rgba(255, 255, 255, 0.08)" }}
+              whileHover={{ y: -8, boxShadow: "0 20px 60px hsl(0 0% 100% / 0.08)" }}
             >
               <div className="flex items-center gap-3 mb-6">
                 <motion.div 
-                  className="w-12 h-12 rounded-xl gold-gradient flex items-center justify-center shadow-lg"
+                  className="w-12 h-12 rounded-xl rose-gradient flex items-center justify-center shadow-float"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   transition={{ duration: 0.3 }}
                 >
@@ -173,7 +173,7 @@ const LocationsSection = () => {
           <Button 
             asChild 
             size="lg"
-            className="gold-gradient text-white hover:opacity-90 shadow-lg hover:shadow-xl transition-all duration-300 group gold-glow"
+            className="glass-dark text-white hover:bg-white/20 shadow-float hover:shadow-elevated transition-all duration-300 group rounded-xl hover-lift"
           >
             <Link to="/contact" className="flex items-center gap-3">
               Get Directions & Contact

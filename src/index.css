@@ -574,4 +574,227 @@
   .warm-bg {
     background-color: hsl(40 35% 96%);
   }
+
+  /* ========================================
+     GLASSMORPHISM UTILITIES
+     Frosted glass effects for modern UI
+     ======================================== */
+  
+  .glass {
+    background: hsl(var(--card) / 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid hsl(var(--border) / 0.5);
+  }
+
+  .glass-strong {
+    background: hsl(var(--card) / 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--border) / 0.6);
+  }
+
+  .glass-subtle {
+    background: hsl(var(--card) / 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid hsl(var(--border) / 0.3);
+  }
+
+  .glass-pink {
+    background: hsl(330 85% 55% / 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid hsl(330 85% 55% / 0.25);
+  }
+
+  .glass-dark {
+    background: hsl(25 30% 15% / 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid hsl(0 0% 100% / 0.1);
+  }
+
+  /* Inner glow effect for glass elements */
+  .glass-glow {
+    box-shadow: 
+      inset 0 1px 1px hsl(0 0% 100% / 0.2),
+      0 4px 24px hsl(330 85% 55% / 0.1);
+  }
+
+  .glass-glow-gold {
+    box-shadow: 
+      inset 0 1px 1px hsl(0 0% 100% / 0.2),
+      0 4px 24px hsl(42 90% 50% / 0.15);
+  }
+
+  /* ========================================
+     REFINED SHADOWS
+     Softer, more sophisticated shadows
+     ======================================== */
+  
+  .shadow-soft {
+    box-shadow: 0 4px 20px hsl(330 30% 40% / 0.08);
+  }
+
+  .shadow-medium {
+    box-shadow: 
+      0 4px 12px hsl(330 30% 40% / 0.06),
+      0 12px 40px hsl(330 30% 40% / 0.1);
+  }
+
+  .shadow-elevated {
+    box-shadow: 
+      0 8px 30px hsl(330 30% 40% / 0.12),
+      0 2px 8px hsl(330 30% 40% / 0.06);
+  }
+
+  .shadow-float {
+    box-shadow: 
+      0 10px 40px hsl(330 85% 55% / 0.15),
+      0 4px 12px hsl(0 0% 0% / 0.08);
+  }
+
+  /* ========================================
+     SCROLL REVEAL ANIMATIONS
+     CSS-based for performance
+     ======================================== */
+  
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .reveal-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .reveal-left.revealed {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .reveal-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .reveal-right.revealed {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .reveal-scale {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .reveal-scale.revealed {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  /* Stagger children animations */
+  .stagger-children > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+
+  .stagger-children.revealed > *:nth-child(1) { transition-delay: 0ms; opacity: 1; transform: translateY(0); }
+  .stagger-children.revealed > *:nth-child(2) { transition-delay: 100ms; opacity: 1; transform: translateY(0); }
+  .stagger-children.revealed > *:nth-child(3) { transition-delay: 200ms; opacity: 1; transform: translateY(0); }
+  .stagger-children.revealed > *:nth-child(4) { transition-delay: 300ms; opacity: 1; transform: translateY(0); }
+  .stagger-children.revealed > *:nth-child(5) { transition-delay: 400ms; opacity: 1; transform: translateY(0); }
+  .stagger-children.revealed > *:nth-child(6) { transition-delay: 500ms; opacity: 1; transform: translateY(0); }
+
+  /* ========================================
+     MICRO-INTERACTIONS
+     Subtle hover and focus effects
+     ======================================== */
+  
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+  }
+
+  .hover-glow {
+    transition: box-shadow 0.3s ease;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 30px hsl(330 85% 55% / 0.25);
+  }
+
+  .btn-shine {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-shine::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      hsl(0 0% 100% / 0.2),
+      transparent
+    );
+    transition: left 0.5s ease;
+  }
+
+  .btn-shine:hover::after {
+    left: 100%;
+  }
+
+  /* Focus rings */
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+  }
+
+  /* ========================================
+     POLISHED TYPOGRAPHY
+     Refined text styles
+     ======================================== */
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-underline {
+    background-image: linear-gradient(90deg, hsl(330 85% 55%), hsl(42 90% 50%));
+    background-size: 100% 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+  }
+
+  /* Rose gold text gradient - more sophisticated pink-gold blend */
+  .rose-gold-text-gradient {
+    background: linear-gradient(135deg, hsl(330 70% 55%) 0%, hsl(350 60% 50%) 50%, hsl(25 80% 55%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Rose gold gradient for backgrounds */
+  .rose-gradient {
+    background: linear-gradient(135deg, hsl(330 70% 55%) 0%, hsl(350 65% 52%) 50%, hsl(15 75% 55%) 100%);
+  }
 }

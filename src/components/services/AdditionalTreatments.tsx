@@ -49,7 +49,7 @@ const AdditionalTreatments = ({ services }: AdditionalTreatmentsProps) => {
                 to={`/booking?service=other&treatment=${encodeURIComponent(service.name)}`}
                 className="group"
               >
-                <div className="p-5 rounded-xl bg-background/50 border border-primary/10 hover:border-primary/40 transition-all duration-500 hover:gold-glow card-hover">
+                <div className="p-5 rounded-xl glass-subtle hover:glass shadow-soft hover:shadow-medium transition-all duration-300 hover-lift">
                   <div className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 group-hover:scale-150 transition-transform duration-300" />
                     <div>
@@ -75,7 +75,7 @@ const AdditionalTreatments = ({ services }: AdditionalTreatmentsProps) => {
               asChild
               variant="outline"
               size="lg"
-              className="border-primary/30 hover:bg-primary/10 hover:border-primary/50"
+              className="glass-subtle hover:glass border-primary/20 hover:border-primary/40 rounded-xl shadow-soft hover-lift"
             >
               <Link to="/booking?service=other">
                 Book a Consultation

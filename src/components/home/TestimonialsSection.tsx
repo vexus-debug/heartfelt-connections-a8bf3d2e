@@ -93,12 +93,12 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <motion.div 
               key={index}
-              className="relative p-8 rounded-3xl bg-card border border-primary/12 hover:border-primary/30 transition-all duration-500 group shadow-sm"
+              className="relative p-8 rounded-2xl glass shadow-medium group"
               initial={{ opacity: 0, y: 50, rotateX: -10 }}
               whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
               transition={{ duration: 0.7, delay: 0.2 + index * 0.15 }}
               viewport={{ once: true, margin: "-50px" }}
-              whileHover={{ y: -8, boxShadow: "0 20px 60px rgba(139, 58, 92, 0.1)" }}
+              whileHover={{ y: -8, boxShadow: "0 20px 60px hsl(330 85% 55% / 0.1)" }}
             >
               {/* Quote icon */}
               <motion.div

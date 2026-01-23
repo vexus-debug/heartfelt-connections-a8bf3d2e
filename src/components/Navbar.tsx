@@ -29,7 +29,7 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-primary/15 shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 glass-strong shadow-soft border-b-0">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -38,15 +38,15 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium transition-colors duration-300 hover:text-primary ${
+                className={`text-sm font-medium px-4 py-2 rounded-xl transition-all duration-300 ${
                   isActive(link.path)
-                    ? "text-primary"
-                    : "text-foreground/80"
+                    ? "text-primary bg-primary/10"
+                    : "text-foreground/70 hover:text-primary hover:bg-primary/5"
                 }`}
               >
                 {link.name}
@@ -55,15 +55,15 @@ const Navbar = () => {
           </div>
 
           {/* Contact Button - Desktop */}
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-3">
             <a
               href="tel:+2347040241630"
-              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-all duration-300 px-3 py-2 rounded-xl hover:bg-primary/5"
             >
               <Phone className="w-4 h-4" />
               +234 704 024 1630
             </a>
-            <Button asChild className="gold-gradient text-white hover:opacity-90 font-semibold">
+            <Button asChild className="rose-gradient text-white hover:opacity-90 font-semibold shadow-soft hover-lift btn-shine rounded-xl">
               <a
                 href="https://wa.me/2347040241630?text=Hello%20POSHBODY%20Aesthetic%20and%20Med%20Spa%2C%20I%20would%20like%20to%20book%20an%20appointment."
                 target="_blank"
@@ -86,7 +86,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden py-4 border-t border-primary/15 animate-fade-in">
+          <div className="lg:hidden py-4 border-t border-primary/10 animate-fade-in">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <Link
@@ -110,7 +110,7 @@ const Navbar = () => {
                   <Phone className="w-4 h-4" />
                   +234 704 024 1630
                 </a>
-                <Button asChild className="w-full gold-gradient text-white font-semibold">
+                <Button asChild className="w-full rose-gradient text-white font-semibold shadow-soft rounded-xl">
                   <a
                     href="https://wa.me/2347040241630?text=Hello%20POSHBODY%20Aesthetic%20and%20Med%20Spa%2C%20I%20would%20like%20to%20book%20an%20appointment."
                     target="_blank"
