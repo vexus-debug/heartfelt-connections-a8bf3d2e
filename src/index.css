@@ -22,20 +22,20 @@
     --popover: 40 30% 98%;
     --popover-foreground: 25 30% 15%;
 
-    /* Vibrant Hot Pink / Magenta primary */
-    --primary: 330 85% 55%;
+    /* Vibrant Hot Pink / Magenta primary — punchy and rich */
+    --primary: 330 90% 48%;
     --primary-foreground: 0 0% 100%;
 
     /* Warm secondary - soft pink-tinted cream */
-    --secondary: 330 30% 94%;
-    --secondary-foreground: 330 80% 45%;
+    --secondary: 330 35% 93%;
+    --secondary-foreground: 330 85% 40%;
 
     /* Warm muted tones - soft pink */
-    --muted: 330 20% 90%;
-    --muted-foreground: 330 25% 45%;
+    --muted: 330 22% 89%;
+    --muted-foreground: 330 30% 40%;
 
     /* Gold accent - warm amber gold (accent only) */
-    --accent: 42 90% 50%;
+    --accent: 42 92% 48%;
     --accent-foreground: 25 30% 12%;
 
     --destructive: 0 84.2% 60.2%;
@@ -43,16 +43,16 @@
 
     --border: 330 30% 85%;
     --input: 40 30% 94%;
-    --ring: 330 85% 55%;
+    --ring: 330 90% 48%;
 
     --radius: 0.5rem;
 
-    /* Hot Pink theme colors */
-    --pink: 330 85% 55%;
-    --pink-light: 330 80% 65%;
-    --pink-dark: 330 85% 45%;
-    --pink-muted: 330 40% 75%;
-    --pink-vibrant: 330 90% 58%;
+    /* Hot Pink theme colors — deeper, richer */
+    --pink: 330 90% 48%;
+    --pink-light: 330 85% 58%;
+    --pink-dark: 330 92% 38%;
+    --pink-muted: 330 50% 65%;
+    --pink-vibrant: 330 95% 50%;
     
     /* Gold accent colors (accent only) */
     --gold: 42 90% 50%;
@@ -88,7 +88,7 @@
     --popover: 330 25% 12%;
     --popover-foreground: 40 35% 92%;
 
-    --primary: 330 80% 60%;
+    --primary: 330 88% 55%;
     --primary-foreground: 330 30% 8%;
 
     --secondary: 330 20% 18%;
